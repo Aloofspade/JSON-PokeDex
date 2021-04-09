@@ -67,3 +67,6 @@ let charmeleon = {
     ],
     "weight": 190
   }
+
+
+  
