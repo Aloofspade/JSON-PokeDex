@@ -202,16 +202,10 @@ let charizard = `{
         }
     ],
     "weight": 905
-<<<<<<< HEAD
-}
-=======
-}`;
->>>>>>> 37b191023ee120493aa14d214f4a5b0b07daf6ba
-
+}`
 let chariObj = JSON.parse(charizard);
 let header = document.getElementById("header");
 let picture = document.getElementById("picute");
-<<<<<<< HEAD
 let pokiName = document.createElement("H1");
 let pokID = document.createElement("H1");
 pokID.id = "pokID";
@@ -221,18 +215,11 @@ pokiName.id = "pokiName";
 header.appendChild(pokiName);
 header.appendChild(pokID);
 let stats = document.getElementById("stats");
-=======
-let pokimonName = document.createElement("H1");
-
-pokimonName.textContent = `${chariObj["name"]} id: ${chariObj["name"]}`;
+let pokimonName = document.createElement("H1");s
 header.appendChild(pokimonName);
-<<<<<<< HEAD
-
-function chariHeader() {
-
-=======
 let hats = document.getElementById("stats")
->>>>>>> f851279e1babf18ba8b15d40ed36d1d65a411e55
+function chariHeader() {
+}
 function chariPictue(){
 }
 chariPictue();
@@ -241,5 +228,4 @@ function createPowers(){
     exp.textContent = `Base Experience ${chariObj["base_experience"]}`;
     exp.id = "exp";
     stats.appendChild(exp);
->>>>>>> 37b191023ee120493aa14d214f4a5b0b07daf6ba
-}
+};
