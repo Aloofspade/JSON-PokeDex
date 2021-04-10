@@ -209,19 +209,14 @@ let picture = document.getElementById("picute");
 let pokiName = document.createElement("H1");
 let pokID = document.createElement("H1");
 pokID.id = "pokID";
-pokID.textContent = `
-id: $ { chariObj["id"] }
-`;
-pokiName.textContent = `${chariObj["name"] }`;
+pokID.textContent = `id: ${chariObj["id"]}`;
+pokiName.textContent = `${chariObj["name"]}`;
 pokiName.id = "pokiName";
 header.appendChild(pokiName);
 header.appendChild(pokID);
 let stats = document.getElementById("stats");
 
-let pokimonName = document.createElement("H1");
-let pokimonName = document.createElement("H1");
-pokimonName.textContent = `${chariObj["name"]} id: $ { chariObj["name"] }
-`;
+let pokimonName = document.createElement("H1")
 header.appendChild(pokimonName);
 let hats = document.getElementById("stats")
 function chariHeader() {
@@ -231,9 +226,7 @@ function chariPictue(){
 chariPictue();
 function createPowers(){
     let exp = document.createElement("p");
-    exp.textContent = `
-Base Experience $ { chariObj["base_experience"] }
-`;
+    exp.textContent = `Base Experience ${chariObj["base_experience"]}`;
     exp.id = "exp";
     stats.appendChild(exp);
 };
