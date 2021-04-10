@@ -77,7 +77,7 @@ let charmeleon = `{
     "height": 11,
     "id": 5,
     "is_default": true,
-    "name": "charmeleon",
+    "name": "Charmeleon",
     "order": 6,
     "stats": [{
             "base_stat": 58,
@@ -204,6 +204,7 @@ let charizard = `{
     "weight": 905
 }`;
 
+
 let chariObj = JSON.parse(charizard);
 let header = document.getElementById("header");
 let picture = document.getElementById("picute");
@@ -220,13 +221,56 @@ header.appendChild(pokimonName);
 let stats = document.getElementById("stats");
 function chariHeader() {
 };
-function chariPictue(){
+function chariPictue() {
 };
 chariPictue();
-function createPowers(){
+function createPowers() {
     let exp = document.createElement("p");
     exp.textContent = `Base Exp ${chariObj["base_experience"]}`;
     exp.id = "exp";
     stats.appendChild(exp);
 };
 createPowers();
+
+
+let header2 = document.getElementById("header1");
+let section2 = document.getElementById("stats1");
+let charmeleonObj = JSON.parse(charmeleon);
+
+createHeader(charmeleonObj);
+// createSection(charmeleonObj);
+
+function createHeader(obj) {
+    const H1 = document.createElement("h1");
+    H1.textContent = `${obj["name"]}`
+    header2.appendChild(H1)
+
+    const p1 = document.createElement("p");
+    p1.textContent = `Base Experiance: ${obj["base_experience"]}`
+    header2.appendChild(p1)
+
+    const p2 = document.createElement("p");
+    p2.textContent = `Height: ${obj["height"]}`
+    header2.appendChild(p2)
+    const p3 = document.createElement("p");
+    p3.textContent = `Order: ${obj["order"]}`
+    header2.appendChild(p3)
+
+
+
+}
+
+// function createSection(obj){
+
+//     const status = obj["types"];
+
+//     for(stat in status){
+//         const p1 = document.createElement("p");
+//         p1.textContent = `${status[stat]["type"]}`
+//         header2.appendChild(p1)
+//     }
+
+
+// }
+
+
