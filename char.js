@@ -202,11 +202,6 @@ let charizard = `{
         }
     ],
     "weight": 905
-<<<<<<< HEAD
-}
-=======
-}`;
->>>>>>> 37b191023ee120493aa14d214f4a5b0b07daf6ba
 
 let chariObj = JSON.parse(charizard);
 let header = document.getElementById("header");
@@ -215,8 +210,12 @@ let picture = document.getElementById("picute");
 let pokiName = document.createElement("H1");
 let pokID = document.createElement("H1");
 pokID.id = "pokID";
-pokID.textContent = `id: ${chariObj["id"]}`;
-pokiName.textContent = `${chariObj["name"]}`;
+pokID.textContent = `
+id: $ { chariObj["id"] }
+`;
+pokiName.textContent = `
+$ { chariObj["name"] }
+`;
 pokiName.id = "pokiName";
 header.appendChild(pokiName);
 header.appendChild(pokID);
@@ -224,7 +223,10 @@ let stats = document.getElementById("stats");
 =======
 let pokimonName = document.createElement("H1");
 
-pokimonName.textContent = `${chariObj["name"]} id: ${chariObj["name"]}`;
+pokimonName.textContent = `
+$ { chariObj["name"] }
+id: $ { chariObj["name"] }
+`;
 header.appendChild(pokimonName);
 <<<<<<< HEAD
 
@@ -238,8 +240,9 @@ function chariPictue(){
 chariPictue();
 function createPowers(){
     let exp = document.createElement("p");
-    exp.textContent = `Base Experience ${chariObj["base_experience"]}`;
+    exp.textContent = `
+Base Experience $ { chariObj["base_experience"] }
+`;
     exp.id = "exp";
     stats.appendChild(exp);
->>>>>>> 37b191023ee120493aa14d214f4a5b0b07daf6ba
 }
