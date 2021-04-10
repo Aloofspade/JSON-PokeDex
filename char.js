@@ -64,6 +64,11 @@ let charmander = `{
     "weight": 85
 }`;
 
+let chariObj = JSON.parse(charmander);
+let header = document.getElementById("header2");
+let picture = document.getElementById("picutre2");
+let pokiCard = document.createElement("div");
+
 
 let charmeleon = `{
     "abilities": [{
@@ -203,6 +208,7 @@ let charizard = `{
     ],
     "weight": 905
 }`;
+
 let chariObj = JSON.parse(charizard);
 let header = document.getElementById("header");
 let picture = document.getElementById("picute");
@@ -219,12 +225,13 @@ let stats = document.getElementById("stats");
 let pokimonName = document.createElement("H1")
 header.appendChild(pokimonName);
 let hats = document.getElementById("stats")
-function chariHeader() {
-}
-function chariPictue(){
-}
+
+function chariHeader() {}
+
+function chariPictue() {}
 chariPictue();
-function createPowers(){
+
+function createPowers() {
     let exp = document.createElement("p");
     exp.textContent = `Base Experience ${chariObj["base_experience"]}`;
     exp.id = "exp";
