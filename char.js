@@ -207,11 +207,15 @@ let charizard = `{
 let chariObj = JSON.parse(charizard);
 let header = document.getElementById("header");
 let picture = document.getElementById("picute");
-let pokimonName = document.createElement("H1");
-
-pokimonName.textContent = `${chariObj["name"]} id: ${chariObj["name"]}`;
-header.appendChild(pokimonName);
-let hats = document.getElementById("stats")
+let pokiName = document.createElement("H1");
+let pokID = document.createElement("H1");
+pokID.id = "pokID";
+pokID.textContent = `id: ${chariObj["id"]}`;
+pokiName.textContent = `${chariObj["name"]}`;
+pokiName.id = "pokiName";
+header.appendChild(pokiName);
+header.appendChild(pokID);
+let stats = document.getElementById("stats");
 function chariPictue(){
 }
 chariPictue();
