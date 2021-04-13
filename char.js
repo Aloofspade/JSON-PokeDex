@@ -1,3 +1,5 @@
+// Everett // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 let charmander = `{
     "abilities": [{
             "name": "blaze"
@@ -64,11 +66,36 @@ let charmander = `{
     "weight": 85
 }`;
 
+let header = document.getElementById("header");
+let section = document.getElementById("stats");
 let chariObj = JSON.parse(charmander);
-let header = document.getElementById("header2");
-let picture = document.getElementById("picutre2");
-let pokiCard = document.createElement("div");
 
+
+createHeader(charmanderObj)
+createSection(charmanderObj)
+
+function createCard(obj) {
+    const H1 = document.createElement("h1")
+    const DIV = document.createElement("div")
+    DIV.className = document.createElement("card-body")
+    H1.className `${"card-title"}`
+    H1.textContent = `${obj["name"]}`
+    header2.appendChild(H1)
+
+
+    const p1 = document.createElement("p");
+    p1.textContent = `Base Experiance: ${obj["base_experience"]}`
+    header2.appendChild(p1)
+
+    const p2 = document.createElement("p");
+    p2.textContent = `Height: ${obj["height"]}`
+    header2.appendChild(p2)
+    const p3 = document.createElement("p");
+    p3.textContent = `Order: ${obj["order"]}`
+    header2.appendChild(p3)
+}
+
+// Everett // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 let charmeleon = `{
     "abilities": [{
@@ -210,15 +237,16 @@ let charizard = `{
 }`;
 
 
-// let chariObj = JSON.parse(charizard);
-// let header = document.getElementById("header");
-// let section = document.getElementById("section");
-// let pokimonName = document.createElement("H1");
-// pokimonName.textContent = `${chariObj["name"]}`;
-// header.appendChild(pokimonName);
-// function chariHeader(){
+let chariObj = JSON.parse(charizard);
+let header = document.getElementById("header");
+let section = document.getElementById("section");
+let pokimonName = document.createElement("H1");
+pokimonName.textContent = `${chariObj["name"]}`;
+header.appendChild(pokimonName);
 
-// }
+function chariHeader() {
+
+}
 
 
 let header2 = document.getElementById("header1");
@@ -226,7 +254,7 @@ let section2 = document.getElementById("stats1");
 let charmeleonObj = JSON.parse(charmeleon);
 
 createHeader(charmeleonObj);
-// createSection(charmeleonObj);
+createSection(charmeleonObj);
 
 function createHeader(obj) {
     const H1 = document.createElement("h1");
@@ -248,15 +276,15 @@ function createHeader(obj) {
 
 }
 
-// function createSection(obj){
+function createSection(obj) {
 
-//     const status = obj["types"];
+    const status = obj["types"];
 
-//     for(stat in status){
-//         const p1 = document.createElement("p");
-//         p1.textContent = `${status[stat]["type"]}`
-//         header2.appendChild(p1)
-//     }
+    for (stat in status) {
+        const p1 = document.createElement("p");
+        p1.textContent = `${status[stat]["type"]}`
+        header2.appendChild(p1)
+    }
 
 
-// }
+}
