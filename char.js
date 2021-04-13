@@ -233,6 +233,8 @@ function createPowers() {
         let effortText = document.createElement("p");
         let baseStat = stati["base_stat"];
         let effortless = stati["effort"];
+        baseText.textContent = `${baseStat}`;
+        effortText.textContent = `${effortless}`;
         statSec.id = `statSec${i}`;
         i++;
     }
@@ -240,35 +242,35 @@ function createPowers() {
 createPowers();
 
 
-let header2 = document.getElementById("header1");
-let section2 = document.getElementById("stats1");
-let charmeleonObj = JSON.parse(charmeleon);
-createHeader(charmeleonObj);
-// createSection(charmeleonObj);
-function createHeader(obj) {
-    const H1 = document.createElement("h1");
-    H1.textContent = `${obj["name"]}`
-    header2.appendChild(H1)
-    const p1 = document.createElement("p");
-    p1.textContent = `Base Experiance: ${obj["base_experience"]}`
-    header2.appendChild(p1)
-    const p2 = document.createElement("p");
-    p2.textContent = `Height: ${obj["height"]}`
-    header2.appendChild(p2)
-    const p3 = document.createElement("p");
-    p3.textContent = `Order: ${obj["order"]}`
-    header2.appendChild(p3)
-}
-
-// function createSection(obj){
-
-//     const status = obj["types"];
-
-//     for(stat in status){
-//         const p1 = document.createElement("p");
-//         p1.textContent = `${status[stat]["type"]}`
-//         header2.appendChild(p1)
-//     }
-
-
+// let header2 = document.getElementById("header1");
+// let section2 = document.getElementById("stats1");
+// let charmeleonObj = JSON.parse(charmeleon);
+// createHeader(charmeleonObj);
+// // createSection(charmeleonObj);
+// function createHeader(obj) {
+//     const H1 = document.createElement("h1");
+//     H1.textContent = `${obj["name"]}`
+//     header2.appendChild(H1)
+//     const p1 = document.createElement("p");
+//     p1.textContent = `Base Experiance: ${obj["base_experience"]}`
+//     header2.appendChild(p1)
+//     const p2 = document.createElement("p");
+//     p2.textContent = `Height: ${obj["height"]}`
+//     header2.appendChild(p2)
+//     const p3 = document.createElement("p");
+//     p3.textContent = `Order: ${obj["order"]}`
+//     header2.appendChild(p3)
 // }
+
+// // function createSection(obj){
+
+// //     const status = obj["types"];
+
+// //     for(stat in status){
+// //         const p1 = document.createElement("p");
+// //         p1.textContent = `${status[stat]["type"]}`
+// //         header2.appendChild(p1)
+// //     }
+
+
+// // }
