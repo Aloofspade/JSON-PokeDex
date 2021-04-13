@@ -68,33 +68,34 @@ let charmander = `{
 
 let header = document.getElementById("header");
 let section = document.getElementById("stats");
-let chariObj = JSON.parse(charmander);
+let charmanderObj = JSON.parse(charmander);
 
 
-createHeader(charmanderObj)
-createSection(charmanderObj)
+
+
 
 function createCard(obj) {
     const H1 = document.createElement("h1")
     const DIV = document.createElement("div")
     DIV.className = document.createElement("card-body")
-    H1.className `${"card-title"}`
+    H1.className = `${"card-title"}`
     H1.textContent = `${obj["name"]}`
-    header2.appendChild(H1)
+    header.appendChild(H1)
 
 
     const p1 = document.createElement("p");
     p1.textContent = `Base Experiance: ${obj["base_experience"]}`
-    header2.appendChild(p1)
+    header.appendChild(p1)
 
     const p2 = document.createElement("p");
     p2.textContent = `Height: ${obj["height"]}`
-    header2.appendChild(p2)
+    header.appendChild(p2)
     const p3 = document.createElement("p");
     p3.textContent = `Order: ${obj["order"]}`
     header2.appendChild(p3)
 }
 
+createCard(charmanderObj);
 // Everett // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 let charmeleon = `{
@@ -237,54 +238,65 @@ let charizard = `{
 }`;
 
 
-let chariObj = JSON.parse(charizard);
-let header = document.getElementById("header");
-let section = document.getElementById("section");
-let pokimonName = document.createElement("H1");
-pokimonName.textContent = `${chariObj["name"]}`;
-header.appendChild(pokimonName);
+// let chariObj = JSON.parse(charizard);
+// let header = document.getElementById("header");
+// let section = document.getElementById("section");
+// let pokimonName = document.createElement("H1");
+// pokimonName.textContent = `${chariObj["name"]}`;
+// header.appendChild(pokimonName);
 
-function chariHeader() {
+// function chariHeader() {};
 
-}
+// function chariPictue() {};
+// chariPictue();
 
-
-let header2 = document.getElementById("header1");
-let section2 = document.getElementById("stats1");
-let charmeleonObj = JSON.parse(charmeleon);
-
-createHeader(charmeleonObj);
-createSection(charmeleonObj);
-
-function createHeader(obj) {
-    const H1 = document.createElement("h1");
-    H1.textContent = `${obj["name"]}`
-    header2.appendChild(H1)
-
-    const p1 = document.createElement("p");
-    p1.textContent = `Base Experiance: ${obj["base_experience"]}`
-    header2.appendChild(p1)
-
-    const p2 = document.createElement("p");
-    p2.textContent = `Height: ${obj["height"]}`
-    header2.appendChild(p2)
-    const p3 = document.createElement("p");
-    p3.textContent = `Order: ${obj["order"]}`
-    header2.appendChild(p3)
+// function createPowers() {
+//     let stati = chariObj["stats"];
+//     let i = 0;
+//     for (statistics in stati) {
+//         let statSec = document.createElement("div");
+//         let baseText = document.createElement("p");
+//         let effortText = document.createElement("p");
+//         let baseStat = stati["base_stat"];
+//         let effortless = stati["effort"];
+//         baseText.textContent = `${baseStat}`;
+//         effortText.textContent = `${effortless}`;
+//         statSec.id = `statSec${i}`;
+//         i++;
+//     }
+// };
+// createPowers();
 
 
+// let header2 = document.getElementById("header1");
+// let section2 = document.getElementById("stats1");
+// let charmeleonObj = JSON.parse(charmeleon);
+// createHeader(charmeleonObj);
+// // createSection(charmeleonObj);
+// function createHeader(obj) {
+//     const H1 = document.createElement("h1");
+//     H1.textContent = `${obj["name"]}`
+//     header2.appendChild(H1)
+//     const p1 = document.createElement("p");
+//     p1.textContent = `Base Experiance: ${obj["base_experience"]}`
+//     header2.appendChild(p1)
+//     const p2 = document.createElement("p");
+//     p2.textContent = `Height: ${obj["height"]}`
+//     header2.appendChild(p2)
+//     const p3 = document.createElement("p");
+//     p3.textContent = `Order: ${obj["order"]}`
+//     header2.appendChild(p3)
+// }
 
-}
+// // function createSection(obj){
 
-function createSection(obj) {
+// //     const status = obj["types"];
 
-    const status = obj["types"];
-
-    for (stat in status) {
-        const p1 = document.createElement("p");
-        p1.textContent = `${status[stat]["type"]}`
-        header2.appendChild(p1)
-    }
+// //     for(stat in status){
+// //         const p1 = document.createElement("p");
+// //         p1.textContent = `${status[stat]["type"]}`
+// //         header2.appendChild(p1)
+// //     }
 
 
-}
+// // }
