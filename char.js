@@ -206,37 +206,48 @@ let charizard = `{
 
 
 let chariObj = JSON.parse(charizard);
-let header = document.getElementById("header");
 let picture = document.getElementById("picute");
-let pokiName = document.createElement("H1");
-let pokID = document.createElement("H1");
-pokID.id = "pokID";
-pokID.textContent = `${chariObj["id"]}`;
-pokiName.textContent = `${chariObj["name"]}`;
-pokiName.id = "pokiName";
-header.appendChild(pokiName);
-header.appendChild(pokID);
-let pokimonName = document.createElement("H1");
-header.appendChild(pokimonName);
 let stats = document.getElementById("stats");
 function chariHeader() {
+    let header = document.getElementById("header");
+    let pokiName = document.createElement("h1");
+    let pokiOrder = document.createElement("h1");
+    pokiOrder.id = "pokOrder";
+    pokiOrder.textContent = `${chariObj["order"]}`;
+    pokiName.textContent = `${chariObj["name"]}`;
+    pokiName.id = "pokiName";
+    header.appendChild(pokiOrder);
+    header.appendChild(pokiName);
+    let pokimonName = document.createElement("H1");
+    header.appendChild(pokimonName);
 };
+chariHeader();
 function chariPictue() {
 };
 chariPictue();
 function createPowers() {
     let stati = chariObj["stats"];
     let i = 0;
-    for(statistics in stati){
+    for (statistics in stati) {
         let statSec = document.createElement("div");
-        let baseText = document.createElement("p");
-        let effortText = document.createElement("p");
-        let baseStat = stati["base_stat"];
-        let effortless = stati["effort"];
-        baseText.textContent = `${baseStat}`;
-        effortText.textContent = `${effortless}`;
-        statSec.id = `statSec${i}`;
-        i++;
+        if(stati[statistics]["stat"]["name"] == "hp"){
+            let baseText = document.createElement("h3");
+            baseText.id = "health";
+            baseText.textContent = `base_stat: ${stati[statistics]["base_stat"]}`;
+            header.appendChild(baseText);
+        }
+        if (stati[statistics]["stat"]["name"] != "hp") {
+            let moveText = document.createElement("h1");
+            let baseText = document.createElement("p");
+            let effortText = document.createElement("p");
+            moveText.textContent = `${stati[statistics]["stat"]["name"]}`;
+            baseText.textContent = `base_stat: ${stati[statistics]["base_stat"]}`;
+            effortText.textContent = `effort: ${stati[statistics]["effort"]}`;
+            stats.appendChild(statSec);
+            statSec.appendChild(moveText);
+            statSec.appendChild(baseText);
+            statSec.appendChild(effortText);
+        }
     }
 };
 createPowers();
