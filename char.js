@@ -66,37 +66,35 @@ let charmander = `{
     "weight": 85
 }`;
 
-let header2 = document.getElementById("header");
-let section = document.getElementById("stats");
-let charmanderObj = JSON.parse(charmander);
+// let header2 = document.getElementById("header2");
+// let section = document.getElementById("stats2");
+// let charmanderObj = JSON.parse(charmander);
 
 
 
 
 
-function createCard(obj) {
-    const H1 = document.createElement("h1")
-    const DIV = document.createElement("div")
-    DIV.className = document.createElement("card-body")
-    H1.className = `${"card-title"}`
-    H1.textContent = `${obj["name"]}`
-    header2.appendChild(H1)
+// function createCard(obj) {
+//     const H1 = document.createElement("h1")
+//     const DIV = document.createElement("div")
+//     DIV.className = document.createElement("card-body")
+//     H1.className = `${"card-title"}`
+//     H1.textContent = `${obj["name"]}`
+//     header2.appendChild(H1)
+//     const p1 = document.createElement("p");
+//     p1.textContent = `Base Experiance: ${obj["base_experience"]}`
+//     header2.appendChild(p1)
 
+//     const p2 = document.createElement("p");
+//     p2.textContent = `Height: ${obj["height"]}`
+//     header2.appendChild(p2)
+//     const p3 = document.createElement("p");
+//     p3.textContent = `Order: ${obj["order"]}`
+//     header2.appendChild(p3)
+// }
 
-    const p1 = document.createElement("p");
-    p1.textContent = `Base Experiance: ${obj["base_experience"]}`
-    header2.appendChild(p1)
-
-    const p2 = document.createElement("p");
-    p2.textContent = `Height: ${obj["height"]}`
-    header2.appendChild(p2)
-    const p3 = document.createElement("p");
-    p3.textContent = `Order: ${obj["order"]}`
-    header2.appendChild(p3)
-}
-
-createCard(charmanderObj);
-// Everett // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// createCard(charmanderObj);
+// // Everett // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 let charmeleon = `{
     "abilities": [{
@@ -238,7 +236,6 @@ let charizard = `{
 }`;
 
 
-<<<<<<< HEAD
 let chariObj = JSON.parse(charizard);
 let picture = document.getElementById("picute");
 let stats = document.getElementById("stats");
@@ -252,8 +249,6 @@ function chariHeader() {
     pokiName.id = "pokiName";
     header.appendChild(pokiOrder);
     header.appendChild(pokiName);
-    let pokimonName = document.createElement("H1");
-    header.appendChild(pokimonName);
 };
 chariHeader();
 function chariPictue() {
@@ -264,10 +259,11 @@ function createPowers() {
     let i = 0;
     for (statistics in stati) {
         let statSec = document.createElement("div");
+        statSec.id = "statSec";
         if(stati[statistics]["stat"]["name"] == "hp"){
             let baseText = document.createElement("h3");
             baseText.id = "health";
-            baseText.textContent = `base_stat: ${stati[statistics]["base_stat"]}`;
+            baseText.textContent = `${stati[statistics]["base_stat"]}`;
             header.appendChild(baseText);
         }
         if (stati[statistics]["stat"]["name"] != "hp") {
@@ -275,8 +271,15 @@ function createPowers() {
             let baseText = document.createElement("p");
             let effortText = document.createElement("p");
             moveText.textContent = `${stati[statistics]["stat"]["name"]}`;
-            baseText.textContent = `base_stat: ${stati[statistics]["base_stat"]}`;
+            baseText.textContent = `base stat: ${stati[statistics]["base_stat"]}`;
             effortText.textContent = `effort: ${stati[statistics]["effort"]}`;
+            if(stati[statistics]["stat"]["name"] == "special attack"){
+                statSec.id = "statSec2";
+                i = 0;
+            }
+            if(stati[statistics]["stat"]["name"] == "speed"){
+                statSec.id = "statSec3";
+            }
             stats.appendChild(statSec);
             statSec.appendChild(moveText);
             statSec.appendChild(baseText);
@@ -285,36 +288,6 @@ function createPowers() {
     }
 };
 createPowers();
-=======
-// let chariObj = JSON.parse(charizard);
-// let header = document.getElementById("header");
-// let section = document.getElementById("section");
-// let pokimonName = document.createElement("H1");
-// pokimonName.textContent = `${chariObj["name"]}`;
-// header.appendChild(pokimonName);
-
-// function chariHeader() {};
-
-// function chariPictue() {};
-// chariPictue();
-
-// function createPowers() {
-//     let stati = chariObj["stats"];
-//     let i = 0;
-//     for (statistics in stati) {
-//         let statSec = document.createElement("div");
-//         let baseText = document.createElement("p");
-//         let effortText = document.createElement("p");
-//         let baseStat = stati["base_stat"];
-//         let effortless = stati["effort"];
-//         baseText.textContent = `${baseStat}`;
-//         effortText.textContent = `${effortless}`;
-//         statSec.id = `statSec${i}`;
-//         i++;
-//     }
-// };
-// createPowers();
->>>>>>> 5d3d8a5403bd978bed7cbd91e3c686aa36b8dfd7
 
 
 // let header2 = document.getElementById("header1");

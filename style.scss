@@ -1,13 +1,39 @@
 body{
-    #surround{
-        #header{
-            display: inline-flex;
-            width: 100%;
-            #pokiName{
-                text-align: center;
+    #header{
+        display: inline-flex;
+        width: 100%;
+        #pokiName{
+            margin-left: 34%;
+            font-size: 50px;
+            margin-top: -10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        #health{
+            margin-left: 48%;
+        }
+    }
+    #stats{
+        #statSec3{
+            p{
+                display: inline;
+                padding-left: 15px;
+                padding-right: 15px;
             }
-            #health{
-                margin-left: 75%;
+        }
+        #statSec2{
+            display: inline;
+            p{
+                display: inline;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+        #statSec{
+            display: inline;
+            p{
+                display: inline;
+                padding-left: 15px;
+                padding-right: 15px;
             }
         }
     }
