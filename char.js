@@ -66,7 +66,7 @@ let charmander = `{
     "weight": 85
 }`;
 
-let header = document.getElementById("header");
+let header2 = document.getElementById("header");
 let section = document.getElementById("stats");
 let charmanderObj = JSON.parse(charmander);
 
@@ -80,16 +80,16 @@ function createCard(obj) {
     DIV.className = document.createElement("card-body")
     H1.className = `${"card-title"}`
     H1.textContent = `${obj["name"]}`
-    header.appendChild(H1)
+    header2.appendChild(H1)
 
 
     const p1 = document.createElement("p");
     p1.textContent = `Base Experiance: ${obj["base_experience"]}`
-    header.appendChild(p1)
+    header2.appendChild(p1)
 
     const p2 = document.createElement("p");
     p2.textContent = `Height: ${obj["height"]}`
-    header.appendChild(p2)
+    header2.appendChild(p2)
     const p3 = document.createElement("p");
     p3.textContent = `Order: ${obj["order"]}`
     header2.appendChild(p3)
