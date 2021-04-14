@@ -1,12 +1,13 @@
 body{
     #surround{
         #header{
-            display: inline;
-            #pokId{
-                text-align: right;
-            }
+            display: inline-flex;
+            width: 100%;
             #pokiName{
-                align-items: left;
+                text-align: center;
+            }
+            #health{
+                margin-left: 75%;
             }
         }
     }

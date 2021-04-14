@@ -1,14 +1,15 @@
 body #surround #header {
-  display: inline;
-}
-
-body #surround #header #pokId {
-  text-align: right;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
 }
 
 body #surround #header #pokiName {
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
+  text-align: center;
+}
+
+body #surround #header #health {
+  margin-left: 75%;
 }
 /*# sourceMappingURL=style.css.map */
