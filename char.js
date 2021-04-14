@@ -238,54 +238,6 @@ let charizard = `{
 }`;
 
 
-<<<<<<< HEAD
-let chariObj = JSON.parse(charizard);
-let picture = document.getElementById("picute");
-let stats = document.getElementById("stats");
-function chariHeader() {
-    let header = document.getElementById("header");
-    let pokiName = document.createElement("h1");
-    let pokiOrder = document.createElement("h1");
-    pokiOrder.id = "pokOrder";
-    pokiOrder.textContent = `${chariObj["order"]}`;
-    pokiName.textContent = `${chariObj["name"]}`;
-    pokiName.id = "pokiName";
-    header.appendChild(pokiOrder);
-    header.appendChild(pokiName);
-    let pokimonName = document.createElement("H1");
-    header.appendChild(pokimonName);
-};
-chariHeader();
-function chariPictue() {
-};
-chariPictue();
-function createPowers() {
-    let stati = chariObj["stats"];
-    let i = 0;
-    for (statistics in stati) {
-        let statSec = document.createElement("div");
-        if(stati[statistics]["stat"]["name"] == "hp"){
-            let baseText = document.createElement("h3");
-            baseText.id = "health";
-            baseText.textContent = `base_stat: ${stati[statistics]["base_stat"]}`;
-            header.appendChild(baseText);
-        }
-        if (stati[statistics]["stat"]["name"] != "hp") {
-            let moveText = document.createElement("h1");
-            let baseText = document.createElement("p");
-            let effortText = document.createElement("p");
-            moveText.textContent = `${stati[statistics]["stat"]["name"]}`;
-            baseText.textContent = `base_stat: ${stati[statistics]["base_stat"]}`;
-            effortText.textContent = `effort: ${stati[statistics]["effort"]}`;
-            stats.appendChild(statSec);
-            statSec.appendChild(moveText);
-            statSec.appendChild(baseText);
-            statSec.appendChild(effortText);
-        }
-    }
-};
-createPowers();
-=======
 // let chariObj = JSON.parse(charizard);
 // let header = document.getElementById("header");
 // let section = document.getElementById("section");
@@ -314,14 +266,13 @@ createPowers();
 //     }
 // };
 // createPowers();
->>>>>>> 5d3d8a5403bd978bed7cbd91e3c686aa36b8dfd7
 
 
 // let header2 = document.getElementById("header1");
 // let section2 = document.getElementById("stats1");
 // let charmeleonObj = JSON.parse(charmeleon);
 // createHeader(charmeleonObj);
-// // createSection(charmeleonObj);
+// createSection(charmeleonObj);
 // function createHeader(obj) {
 //     const H1 = document.createElement("h1");
 //     H1.textContent = `${obj["name"]}`
