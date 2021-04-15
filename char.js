@@ -187,14 +187,7 @@ let charmeleon = `{
 //     const p4 = document.createElement("p");
 //     p4.textContent = `Id: ${obj["id"]}`
 //     header2.appendChild(p4)
-    
-  
-  
-   
-    
 //     }
-
-    
 
 // function createSection(obj){
 //     const abilitie = obj["abilities"];
@@ -330,10 +323,8 @@ let charizard = `{
 
 
 let chariObj = JSON.parse(charizard);
-let picture = document.getElementById("picute");
-let stats = document.getElementById("stats");
 function chariHeader() {
-    let header = document.getElementById("header");
+    let header = document.getElementById("header")
     let pokiName = document.createElement("h1");
     let pokiOrder = document.createElement("h1");
     pokiOrder.id = "pokOrder";
@@ -343,8 +334,9 @@ function chariHeader() {
     header.appendChild(pokiOrder);
     header.appendChild(pokiName);
 };
-chariHeader();
+chariHeader(chariObj);
 function chariPictue() {
+    let picture = document.getElementById("picute");
 };
 chariPictue();
 function createPowers() {
@@ -383,27 +375,8 @@ createPowers();
 function createTypes(){
     let types = chariObj["types"];
     for(type of types){
-        let name = 
+        let name = chariObj["types"][type].type.name;
+        console.log(name);
     }
 }
-createType();
-
-// let header2 = document.getElementById("header1");
-// let section2 = document.getElementById("stats1");
-// let charmeleonObj = JSON.parse(charmeleon);
-// createHeader(charmeleonObj);
-// // createSection(charmeleonObj);
-// function createHeader(obj) {
-//     const H1 = document.createElement("h1");
-//     H1.textContent = `${obj["name"]}`
-//     header2.appendChild(H1)
-//     const p1 = document.createElement("p");
-//     p1.textContent = `Base Experiance: ${obj["base_experience"]}`
-//     header2.appendChild(p1)
-//     const p2 = document.createElement("p");
-//     p2.textContent = `Height: ${obj["height"]}`
-//     header2.appendChild(p2)
-//     const p3 = document.createElement("p");
-//     p3.textContent = `Order: ${obj["order"]}`
-//     header2.appendChild(p3)
-// }
+createTypes();
