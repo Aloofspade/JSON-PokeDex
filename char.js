@@ -325,65 +325,89 @@ let charizard = `{
 }`;
 
 
-// let chariObj = JSON.parse(charizard);
+let chariObj = JSON.parse(charizard);
 
-// function chariHeader() {
-//     let header = document.getElementById("header")
-//     let pokiName = document.createElement("h1");
-//     let pokiOrder = document.createElement("h1");
-//     pokiOrder.id = "pokOrder";
-//     pokiOrder.textContent = `${chariObj["order"]}`;
-//     pokiName.textContent = `${chariObj["name"]}`;
-//     pokiName.id = "pokiName";
-//     header.appendChild(pokiOrder);
-//     header.appendChild(pokiName);
-// };
-// chariHeader(chariObj);
+function chariHeader() {
+    let header = document.getElementById("header")
+    let pokiName = document.createElement("h1");
+    let pokiOrder = document.createElement("h1");
+    pokiOrder.id = "pokOrder";
+    pokiOrder.textContent = `${chariObj["order"]}`;
+    pokiName.textContent = `${chariObj["name"]}`;
+    pokiName.id = "pokiName";
+    let id = document.createElement("h2");
+    id.id = "id";
+    id.textContent = `(${chariObj.id})`
+    header.appendChild(pokiOrder);
+    header.appendChild(pokiName);
+    header.appendChild(id);
+};
+chariHeader(chariObj);
 
-// function chariPictue() {
-//     let picture = document.getElementById("picute");
-// };
-// chariPictue();
+function chariPictue() {
+    let picture = document.getElementById("picute");
+};
+chariPictue();
 
-// function createPowers() {
-//     let stati = chariObj["stats"];
-//     let i = 0;
-//     for (statistics in stati) {
-//         let statSec = document.createElement("div");
-//         statSec.id = "statSec";
-//         if (stati[statistics]["stat"]["name"] == "hp") {
-//             let baseText = document.createElement("h3");
-//             baseText.id = "health";
-//             baseText.textContent = `${stati[statistics]["base_stat"]}`;
-//             header.appendChild(baseText);
-//         }
-//         if (stati[statistics]["stat"]["name"] != "hp") {
-//             let moveText = document.createElement("h1");
-//             let baseText = document.createElement("p");
-//             let effortText = document.createElement("p");
-//             moveText.textContent = `${stati[statistics]["stat"]["name"]}`;
-//             baseText.textContent = `base stat: ${stati[statistics]["base_stat"]}`;
-//             effortText.textContent = `effort: ${stati[statistics]["effort"]}`;
-//             stats.appendChild(statSec);
-//             statSec.appendChild(moveText);
-//             statSec.appendChild(baseText);
-//             statSec.appendChild(effortText);
-//         }
-//         if (stati[statistics]["stat"]["name"] == "special-attack" || stati[statistics]["stat"]["name"] == "special-defense") {
-//             statSec.id = "statSec2";
-//         }
-//         if (stati[statistics]["stat"]["name"] == "speed") {
-//             statSec.id = "statSec3";
-//         }
-//     }
-// };
-// createPowers();
+function createPowers() {
+    let stati = chariObj["stats"];
+    let i = 0;
+    for (statistics in stati) {
+        let statSec = document.createElement("div");
+        statSec.id = "statSec";
+        if (stati[statistics]["stat"]["name"] == "hp") {
+            let baseText = document.createElement("h3");
+            baseText.id = "health";
+            baseText.textContent = `${stati[statistics]["base_stat"]}`;
+            header.appendChild(baseText);
+        }
+        if (stati[statistics]["stat"]["name"] != "hp") {
+            let moveText = document.createElement("h1");
+            let baseText = document.createElement("p");
+            let effortText = document.createElement("p");
+            moveText.textContent = `${stati[statistics]["stat"]["name"]}`;
+            baseText.textContent = `base stat: ${stati[statistics]["base_stat"]}`;
+            effortText.textContent = `effort: ${stati[statistics]["effort"]}`;
+            stats.appendChild(statSec);
+            statSec.appendChild(moveText);
+            statSec.appendChild(baseText);
+            statSec.appendChild(effortText);
+        }
+        if (stati[statistics]["stat"]["name"] == "special-attack" || stati[statistics]["stat"]["name"] == "special-defense") {
+            statSec.id = "statSec2";
+        }
+        if (stati[statistics]["stat"]["name"] == "speed") {
+            statSec.id = "statSec3";
+        }
+    }
+    let statSec = document.createElement("div");
+    statSec.id = "statSec3";
+    let weightHeader = document.createElement("h1");
+    weightHeader.textContent = "Weight";
+    let weightText = document.createElement("p");
+    weightText.textContent = `${chariObj["weight"]}`;
+    statSec.appendChild(weightHeader);
+    statSec.appendChild(weightText);
+    stats.appendChild(statSec);
+};
+createPowers();
 
-// function createTypes() {
-//     let types = chariObj["types"];
-//     for (type of types) {
-//         let name = chariObj["types"][type].type.name;
-//         console.log(name);
-//     }
-// }
-// createTypes();
+function createTypes() {
+    let types = chariObj["types"];
+    for (typer of types) {
+        let type = typer.type.name;
+        let typeDiv = document.createElement("div");
+        let typeText = document.createElement("h3");
+        if (type == "fire") {
+            typeDiv.id = "fire";
+            typeText.textContent = `${type}`;
+            typeDiv.appendChild(typeText);
+        } else {
+            typeDiv.id = "flying";
+            typeText.textContent = `${type}`;
+            typeDiv.appendChild(typeText);
+        }
+        stats.appendChild(typeDiv);
+    }
+}
+createTypes();
