@@ -1,5 +1,16 @@
 body{
+    width: 100%;
     #header{
         display: inline-flex;
+        width: 100%;
+    }
+    #pokiName{
+        margin-left: 40%;
+    }
+    #id{
+        margin-top: 4px;
+    }
+    #health{
+        margin-left: 43%;
     }
 }
