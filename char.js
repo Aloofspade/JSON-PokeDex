@@ -1,72 +1,3 @@
-let charmander = {
-    "abilities": [{
-            "name": "blaze"
-        },
-        {
-            "name": "solar-power"
-        }
-    ],
-    "base_experience": 62,
-    "height": 6,
-    "id": 4,
-    "is_default": true,
-    "name": "charmander",
-    "order": 5,
-    "stats": [{
-            "base_stat": 39,
-            "effort": 0,
-            "stat": {
-                "name": "hp"
-            }
-        },
-        {
-            "base_stat": 52,
-            "effort": 0,
-            "stat": {
-                "name": "attack"
-            }
-        },
-        {
-            "base_stat": 43,
-            "effort": 0,
-            "stat": {
-                "name": "defense"
-            }
-        },
-        {
-            "base_stat": 60,
-            "effort": 0,
-            "stat": {
-                "name": "special-attack"
-            }
-        },
-        {
-            "base_stat": 50,
-            "effort": 0,
-            "stat": {
-                "name": "special-defense"
-            }
-        },
-        {
-            "base_stat": 65,
-            "effort": 1,
-            "stat": {
-                "name": "speed"
-            }
-        }
-    ],
-    "types": [{
-        "slot": 1,
-        "type": {
-            "name": "fire"
-        }
-    }],
-    "weight": 85
-};
-// let header2 = document.getElementById("header2");
-// let section = document.getElementById("stats2");
-// let charmanderObj = JSON.parse(charmander);
-
 let {name: names, stats: statName, abilities: abil, id: id, ...others} = charmander;
 console.log(statName)
 
@@ -373,9 +304,9 @@ function createPowers() {
 };
 createPowers();
 function createTypes(){
-    let types = chariObj["types"];
-    for(type of types){
-        let name = chariObj["types"][type].type.name;
+    let types = chariObj["type"];
+    for(typer of types){
+        let name = types["type"]["name"];
         console.log(name);
     }
 }
