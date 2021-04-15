@@ -260,8 +260,12 @@ function chariHeader() {
     pokiOrder.textContent = `${chariObj["order"]}`;
     pokiName.textContent = `${chariObj["name"]}`;
     pokiName.id = "pokiName";
+    let id = document.createElement("h2");
+    id.id = "id";
+    id.textContent = `(${chariObj.id})`
     header.appendChild(pokiOrder);
     header.appendChild(pokiName);
+    header.appendChild(id);
 };
 chariHeader(chariObj);
 function chariPictue() {
@@ -299,6 +303,15 @@ function createPowers() {
             statSec.id = "statSec3";
         }
     }
+    let statSec = document.createElement("div");
+    statSec.id = "statSec3";
+    let weightHeader = document.createElement("h1");
+    weightHeader.textContent = "Weight";
+    let weightText = document.createElement("p");
+    weightText.textContent = `${chariObj["weight"]}`;
+    statSec.appendChild(weightHeader);
+    statSec.appendChild(weightText);
+    stats.appendChild(statSec);
 };
 createPowers();
 function createTypes(){
@@ -306,17 +319,17 @@ function createTypes(){
     for(typer of types){
         let type = typer.type.name;
         let typeDiv = document.createElement("div");
-        let typeText = document.createElement("p");
-        statSec.appendChild(typeDiv);
-        if(slot == "fire"){
+        let typeText = document.createElement("h3");
+        if(type == "fire"){
             typeDiv.id = "fire";
-            typeText = `type: ${type}`;
+            typeText.textContent = `${type}`;
             typeDiv.appendChild(typeText);
         }else{
             typeDiv.id = "flying";
-            typeText = `type: ${type}`;
+            typeText.textContent = `${type}`;
             typeDiv.appendChild(typeText);
         }
+        stats.appendChild(typeDiv);
     }
 }
 createTypes();
