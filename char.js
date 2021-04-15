@@ -1,5 +1,3 @@
-let {name: names, stats: statName, abilities: abil, id: id, ...others} = charmander;
-console.log(statName)
 
 // function createCard(obj) {
 //     const H1 = document.createElement("h1")
@@ -304,10 +302,21 @@ function createPowers() {
 };
 createPowers();
 function createTypes(){
-    let types = chariObj["type"];
+    let types = chariObj["types"];
     for(typer of types){
-        let name = types["type"]["name"];
-        console.log(name);
+        let type = typer.type.name;
+        let typeDiv = document.createElement("div");
+        let typeText = document.createElement("p");
+        statSec.appendChild(typeDiv);
+        if(slot == "fire"){
+            typeDiv.id = "fire";
+            typeText = `type: ${type}`;
+            typeDiv.appendChild(typeText);
+        }else{
+            typeDiv.id = "flying";
+            typeText = `type: ${type}`;
+            typeDiv.appendChild(typeText);
+        }
     }
 }
 createTypes();
