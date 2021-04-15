@@ -1,15 +1,1 @@
-body #surround #header {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 100%;
-}
-
-body #surround #header #pokiName {
-  text-align: center;
-}
-
-body #surround #header #health {
-  margin-left: 75%;
-}
-/*# sourceMappingURL=style.css.map */
+/* No CSS *//*# sourceMappingURL=style.css.map */
