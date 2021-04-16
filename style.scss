@@ -1,25 +1,21 @@
-<<<<<<< HEAD
-body{
-    width: 100%;
-    #header{
-=======
-html {
-    background-image: url(card\ background.png);
+#charmander1 {
+    background-image: url("card-background.png");
+    background-size: 100%;
 }
 
 body {
+    width: 100%;
     #header {
->>>>>>> 4bb0f649d23b99bbf6b424b67cabb4bcd39313b9
         display: inline-flex;
         width: 100%;
     }
-    #pokiName{
+    #pokiName {
         margin-left: 40%;
     }
-    #id{
+    #id {
         margin-top: 4px;
     }
-    #health{
+    #health {
         margin-left: 43%;
     }
 }

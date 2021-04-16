@@ -1,3 +1,8 @@
+#charmander1 {
+  background-image: url("card-background.png");
+  background-size: 100%;
+}
+
 body {
   width: 100%;
 }
