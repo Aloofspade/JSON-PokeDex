@@ -363,11 +363,11 @@ function createPowers() {
         }
         if (stati[statistics]["stat"]["name"] != "hp") {
             let moveText = document.createElement("h1");
-            moveText.id = "moveText";
+            moveText.id = "move";
             let baseText = document.createElement("p");
-            baseText.id = "baseText";
+            baseText.id = "base";
             let effortText = document.createElement("p");
-            effortText.id = "effortText"
+            effortText.id = "effort"
             moveText.textContent = `${stati[statistics]["stat"]["name"]}`;
             baseText.textContent = `base stat: ${stati[statistics]["base_stat"]}`;
             effortText.textContent = `effort: ${stati[statistics]["effort"]}`;

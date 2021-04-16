@@ -1,49 +1,56 @@
-html {
+#charHTML {
   border: 8px orange solid;
   border-radius: 2%;
   background-color: black;
 }
 
-html body {
+#charHTML #charBody {
   background-image: url("background-img.png");
   width: 100%;
   background-size: 100%;
 }
 
-html body #header {
+#charHTML #charBody #header {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   width: 100%;
-  background-color: red;
 }
 
-html body #pokiName {
+#charHTML #charBody #picture {
+  margin-left: 30%;
+  background-image: url(chari.png);
+  height: 60vh;
+  width: 23%;
+  background-size: 150%;
+}
+
+#charHTML #charBody #pokiName {
   margin-left: 40%;
 }
 
-html body #id {
+#charHTML #charBody #id {
   margin-top: 4px;
 }
 
-html body #health {
+#charHTML #charBody #health {
   margin-left: 42%;
 }
 
-html body #statSec {
+#charHTML #charBody #statSec {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-html body #typeDiv {
+#charHTML #charBody #typeDiv {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   width: 100%;
 }
 
-html body #typeDiv #fire {
+#charHTML #charBody #typeDiv #fire {
   background-color: red;
   font: bolder;
   font-size: 47px;
@@ -52,7 +59,7 @@ html body #typeDiv #fire {
   height: 60px;
 }
 
-html body #typeDiv #flying {
+#charHTML #charBody #typeDiv #flying {
   background-color: orange;
   font: bolder;
   font-size: 47px;

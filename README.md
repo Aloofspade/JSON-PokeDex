@@ -2,6 +2,7 @@
 Dylan added a header and some information to the charizard page, ID, and Name.
 Dylan added the rest of the abilities and is working to put them in order
 Dylan worked on the types and failed for about an hour
+Dylan added a picture to his card and helped everett because he was having problem
 Abdi added a header and some information to the charmeleon page
 Abdi added all of the objects to the JS. 
 

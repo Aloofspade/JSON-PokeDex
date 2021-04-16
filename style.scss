@@ -1,15 +1,21 @@
-html{
+#charHTML{
     border: 8px orange solid;
     border-radius: 2%;
     background-color: black;
-    body{
+    #charBody{
         background-image: url("background-img.png");
         width: 100%;
         background-size: 100%;
         #header{
             display: inline-flex;
             width: 100%;
-            background-color: red;
+        }
+        #picture{
+            margin-left: 30%;
+            background-image: url(chari.png);
+            height: 60vh;
+            width: 23%;
+            background-size: 150%;
         }
         #pokiName{
             margin-left: 40%;
@@ -21,7 +27,7 @@ html{
             margin-left: 42%;
         }
         #statSec{
-            display: inline-flex;
+            display: inline-flex;  
         }
         #typeDiv{
             display: inline-flex;
