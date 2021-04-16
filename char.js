@@ -88,7 +88,7 @@ function createCard(obj) {
     header2.appendChild(p3)
 }
 
-createCard(charmanderObj);
+// createCard(charmanderObj);
 // Everett // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
@@ -344,10 +344,10 @@ function chariHeader() {
 };
 chariHeader(chariObj);
 
-function chariPictue() {
+function chariPicture() {
     let picture = document.getElementById("picute");
 };
-chariPictue();
+chariPicture();
 
 function createPowers() {
     let stati = chariObj["stats"];
@@ -356,15 +356,18 @@ function createPowers() {
         let statSec = document.createElement("div");
         statSec.id = "statSec";
         if (stati[statistics]["stat"]["name"] == "hp") {
-            let baseText = document.createElement("h3");
+            let baseText = document.createElement("h1");
             baseText.id = "health";
             baseText.textContent = `${stati[statistics]["base_stat"]}`;
             header.appendChild(baseText);
         }
         if (stati[statistics]["stat"]["name"] != "hp") {
             let moveText = document.createElement("h1");
+            moveText.id = "moveText";
             let baseText = document.createElement("p");
+            baseText.id = "baseText";
             let effortText = document.createElement("p");
+            effortText.id = "effortText"
             moveText.textContent = `${stati[statistics]["stat"]["name"]}`;
             baseText.textContent = `base stat: ${stati[statistics]["base_stat"]}`;
             effortText.textContent = `effort: ${stati[statistics]["effort"]}`;
@@ -394,16 +397,17 @@ createPowers();
 
 function createTypes() {
     let types = chariObj["types"];
+    let typeDiv = document.createElement("div");
     for (typer of types) {
         let type = typer.type.name;
-        let typeDiv = document.createElement("div");
+        typeDiv.id = "typeDiv";
         let typeText = document.createElement("h3");
         if (type == "fire") {
-            typeDiv.id = "fire";
+            typeText.id = "fire";
             typeText.textContent = `${type}`;
             typeDiv.appendChild(typeText);
         } else {
-            typeDiv.id = "flying";
+            typeText.id = "flying";
             typeText.textContent = `${type}`;
             typeDiv.appendChild(typeText);
         }

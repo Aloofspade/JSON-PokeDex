@@ -1,25 +1,47 @@
-<<<<<<< HEAD
-body{
-    width: 100%;
-    #header{
-=======
-html {
-    background-image: url(card\ background.png);
-}
-
-body {
-    #header {
->>>>>>> 4bb0f649d23b99bbf6b424b67cabb4bcd39313b9
-        display: inline-flex;
+html{
+    border: 8px orange solid;
+    border-radius: 2%;
+    background-color: black;
+    body{
+        background-image: url("background-img.png");
         width: 100%;
-    }
-    #pokiName{
-        margin-left: 40%;
-    }
-    #id{
-        margin-top: 4px;
-    }
-    #health{
-        margin-left: 43%;
+        background-size: 100%;
+        #header{
+            display: inline-flex;
+            width: 100%;
+            background-color: red;
+        }
+        #pokiName{
+            margin-left: 40%;
+        }
+        #id{
+            margin-top: 4px;
+        }
+        #health{
+            margin-left: 42%;
+        }
+        #statSec{
+            display: inline-flex;
+        }
+        #typeDiv{
+            display: inline-flex;
+            width: 100%;
+            #fire{
+                background-color: red;
+                font: bolder;
+                font-size: 47px;
+                text-align: center;
+                width: 50%;
+                height: 60px;
+            }
+            #flying{
+                background-color: orange;
+                font: bolder;
+                font-size: 47px;
+                text-align: center;
+                width: 50%;
+                height: 60px;
+            }
+        }
     }
 }
