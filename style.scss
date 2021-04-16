@@ -1,14 +1,20 @@
-#charHTML{
+#charHTML {
     border: 8px orange solid;
     border-radius: 2%;
     background-color: black;
+<<<<<<< HEAD
     #charBody{
         #charmander {
+=======
+    #charBody {
+        #charmander1 {
+>>>>>>> 80cb9b7598d7206b41ea18831cff7de2a4f10b50
             background-image: url("card-background.png");
             background-size: 100%;
         }
     }
 }
+
 html {
     border: 8px orange solid;
     border-radius: 2%;
@@ -23,7 +29,7 @@ html {
             display: inline-flex;
             width: 100%;
         }
-        #picture{
+        #picture {
             margin-left: 30%;
             background-image: url(chari.png);
             height: 60vh;
@@ -39,28 +45,28 @@ html {
         #health {
             margin-left: 42%;
         }
-        #statSec{
-            display: inline-flex;  
         #statSec {
             display: inline-flex;
-        }
-        #typeDiv {
-            display: inline-flex;
-            width: 100%;
-            #fire {
-                background-color: red;
-                font: bolder;
-                font-size: 47px;
-                text-align: center;
-                width: 50%;
-                height: 60px;
+            #statSec {
+                display: inline-flex;
             }
-            #flying {
-                background-color: orange;
-                font: bolder;
-                font-size: 47px;
-                text-align: center;
-                width: 50%;
+            #typeDiv {
+                display: inline-flex;
+                width: 100%;
+                #fire {
+                    background-color: red;
+                    font: bolder;
+                    font-size: 47px;
+                    text-align: center;
+                    width: 50%;
+                    height: 60px;
+                }
+                #flying {
+                    background-color: orange;
+                    font: bolder;
+                    font-size: 47px;
+                    text-align: center;
+                    width: 50%;
                     height: 60px;
                 }
             }

@@ -1,89 +1,97 @@
 #charHTML {
-  border: 8px orange solid;
-  border-radius: 2%;
-  background-color: black;
+    border: 8px orange solid;
+    border-radius: 2%;
+    background-color: black;
 }
 
+<<<<<<< HEAD
 #charHTML #charBody #charmander {
   background-image: url("card-background.png");
   background-size: 100%;
+=======
+#charHTML #charBody #charmander1 {
+    background-image: url("card-background.png");
+    background-size: 100%;
+>>>>>>> 80cb9b7598d7206b41ea18831cff7de2a4f10b50
 }
 
 html {
-  border: 8px orange solid;
-  border-radius: 2%;
-  background-color: black;
+    border: 8px orange solid;
+    border-radius: 2%;
+    background-color: black;
 }
 
 html body {
-  background-image: url("background-img.png");
-  width: 100%;
-  height: 100vh;
-  background-size: 100%;
-  color: black;
+    background-image: url("background-img.png");
+    width: 100%;
+    height: 100vh;
+    background-size: 100%;
+    color: black;
 }
 
 html body #header {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 100%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 100%;
 }
 
 html body #picture {
-  margin-left: 30%;
-  background-image: url(chari.png);
-  height: 60vh;
-  width: 23%;
-  background-size: 150%;
+    margin-left: 30%;
+    background-image: url(chari.png);
+    height: 60vh;
+    width: 23%;
+    background-size: 150%;
 }
 
 html body #pokiName {
-  margin-left: 40%;
+    margin-left: 40%;
 }
 
 html body #id {
-  margin-top: 4px;
+    margin-top: 4px;
 }
 
 html body #health {
-  margin-left: 42%;
+    margin-left: 42%;
 }
 
 html body #statSec {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
 }
 
 html body #statSec #statSec {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
 }
 
 html body #statSec #typeDiv {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 100%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 100%;
 }
 
 html body #statSec #typeDiv #fire {
-  background-color: red;
-  font: bolder;
-  font-size: 47px;
-  text-align: center;
-  width: 50%;
-  height: 60px;
+    background-color: red;
+    font: bolder;
+    font-size: 47px;
+    text-align: center;
+    width: 50%;
+    height: 60px;
 }
 
 html body #statSec #typeDiv #flying {
-  background-color: orange;
-  font: bolder;
-  font-size: 47px;
-  text-align: center;
-  width: 50%;
-  height: 60px;
+    background-color: orange;
+    font: bolder;
+    font-size: 47px;
+    text-align: center;
+    width: 50%;
+    height: 60px;
 }
+
+
 /*# sourceMappingURL=style.css.map */
