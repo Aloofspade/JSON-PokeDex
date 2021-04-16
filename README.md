@@ -9,3 +9,4 @@ Abdi added all of the objects to the JS.
 * I added all the files , made the bootstrap to connect with everything, helped the scss work and started the card bootstrap in char.js
 * Added begining info for the charmander page and picture
 * Made the charmander page centered and treid and failed to add a background to all pokemon pages
+* Finished the charmander page put background and centered it.
