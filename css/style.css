@@ -1,4 +1,10 @@
-#charmander1 {
+#charHTML {
+    border: 8px orange solid;
+    border-radius: 2%;
+    background-color: black;
+}
+
+#charHTML #charBody #charmander1 {
     background-image: url("card-background.png");
     background-size: 100%;
 }
@@ -9,20 +15,22 @@ html {
     background-color: black;
 }
 
-#charHTML #charBody {
+html body {
     background-image: url("background-img.png");
     width: 100%;
+    height: 100vh;
     background-size: 100%;
+    color: black;
 }
 
-#charHTML #charBody #header {
+html body #header {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     width: 100%;
 }
 
-#charHTML #charBody #picture {
+html body #picture {
     margin-left: 30%;
     background-image: url(chari.png);
     height: 60vh;
@@ -30,32 +38,38 @@ html {
     background-size: 150%;
 }
 
-#charHTML #charBody #pokiName {
+html body #pokiName {
     margin-left: 40%;
 }
 
-#charHTML #charBody #id {
+html body #id {
     margin-top: 4px;
 }
 
-#charHTML #charBody #health {
+html body #health {
     margin-left: 42%;
 }
 
-#charHTML #charBody #statSec {
+html body #statSec {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
 }
 
-#charHTML #charBody #typeDiv {
+html body #statSec #statSec {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+html body #statSec #typeDiv {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     width: 100%;
 }
 
-#charHTML #charBody #typeDiv #fire {
+html body #statSec #typeDiv #fire {
     background-color: red;
     font: bolder;
     font-size: 47px;
@@ -64,7 +78,7 @@ html {
     height: 60px;
 }
 
-#charHTML #charBody #typeDiv #flying {
+html body #statSec #typeDiv #flying {
     background-color: orange;
     font: bolder;
     font-size: 47px;
