@@ -1,79 +1,77 @@
-<<<<<<< HEAD
-#charHTML {
-=======
 #charmander1 {
-  background-image: url("card-background.png");
-  background-size: 100%;
+    background-image: url("card-background.png");
+    background-size: 100%;
 }
 
 html {
->>>>>>> 3dafefc766c1e30628024c6892adfe2d9be19a0b
-  border: 8px orange solid;
-  border-radius: 2%;
-  background-color: black;
+    border: 8px orange solid;
+    border-radius: 2%;
+    background-color: black;
 }
 
 #charHTML #charBody {
-  background-image: url("background-img.png");
-  width: 100%;
-  background-size: 100%;
+    background-image: url("background-img.png");
+    width: 100%;
+    background-size: 100%;
 }
 
 #charHTML #charBody #header {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 100%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 100%;
 }
 
 #charHTML #charBody #picture {
-  margin-left: 30%;
-  background-image: url(chari.png);
-  height: 60vh;
-  width: 23%;
-  background-size: 150%;
+    margin-left: 30%;
+    background-image: url(chari.png);
+    height: 60vh;
+    width: 23%;
+    background-size: 150%;
 }
 
 #charHTML #charBody #pokiName {
-  margin-left: 40%;
+    margin-left: 40%;
 }
 
 #charHTML #charBody #id {
-  margin-top: 4px;
+    margin-top: 4px;
 }
 
 #charHTML #charBody #health {
-  margin-left: 42%;
+    margin-left: 42%;
 }
 
 #charHTML #charBody #statSec {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
 }
 
 #charHTML #charBody #typeDiv {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 100%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 100%;
 }
 
 #charHTML #charBody #typeDiv #fire {
-  background-color: red;
-  font: bolder;
-  font-size: 47px;
-  text-align: center;
-  width: 50%;
-  height: 60px;
+    background-color: red;
+    font: bolder;
+    font-size: 47px;
+    text-align: center;
+    width: 50%;
+    height: 60px;
 }
 
 #charHTML #charBody #typeDiv #flying {
-  background-color: orange;
-  font: bolder;
-  font-size: 47px;
-  text-align: center;
-  width: 50%;
-  height: 60px;
+    background-color: orange;
+    font: bolder;
+    font-size: 47px;
+    text-align: center;
+    width: 50%;
+    height: 60px;
 }
+
+
 /*# sourceMappingURL=style.css.map */

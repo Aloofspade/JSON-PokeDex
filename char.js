@@ -66,7 +66,7 @@ let charmander = `{
 
 let charmObj = JSON.parse(charmander);
 
-function chariHeader() {
+function charmHeader() {
     let header1 = document.getElementById("header1");
     let pokimonName = document.createElement("h1");
     let pokiOrder = document.createElement("h1");
@@ -81,7 +81,7 @@ function chariHeader() {
     header1.appendChild(pokimonName);
     header1.appendChild(id);
 };
-chariHeader(charmObj);
+charmHeader(charmObj);
 
 
 function createPowers() {
@@ -214,98 +214,97 @@ let charmeleon = `{
     "weight": 190
 }`;
 
-// let header2 = document.getElementById("header1");
-// let section2 = document.getElementById("stats1");
-// let charmeleonObj = JSON.parse(charmeleon);
+let header2 = document.getElementById("header1");
+let section2 = document.getElementById("stats1");
+let charmeleonObj = JSON.parse(charmeleon);
 
-// createHeader(charmeleonObj);
-// createSection(charmeleonObj);
+createHeader(charmeleonObj);
+createSection(charmeleonObj);
 
-// function createHeader(obj){
-//     const H1 = document.createElement("h1");
-//     H1.textContent = `${obj["name"]}`
-//     header2.appendChild(H1)
+function createHeader(obj) {
+    const H1 = document.createElement("h1");
+    H1.textContent = `${obj["name"]}`
+    header2.appendChild(H1)
 
-//     const p1 = document.createElement("p");
-//     p1.textContent = `Base Experiance: ${obj["base_experience"]}`
-//     header2.appendChild(p1)
-
-
-//     const p2 = document.createElement("p");
-//     p2.textContent = `Height: ${obj["height"]}`
-//     header2.appendChild(p2)
-//     const p6 = document.createElement("p");
-//     p6.textContent = `Weight: ${obj["weight"]}`
-//     header2.appendChild(p6)
-//     const p3 = document.createElement("p");
-//     p3.textContent = `Order: ${obj["order"]}`
-//     header2.appendChild(p3)
-//     const p4 = document.createElement("p");
-//     p4.textContent = `Id: ${obj["id"]}`
-//     header2.appendChild(p4)
-//     }
-
-// function createSection(obj){
-//     const abilitie = obj["abilities"];
-
-//     const types = obj["types"];
-
-//     const status = obj["stats"]
-
-//     for(tys in types){
-//         const p7 = document.createElement("p");
-//         p7.textContent = `Slot: ${types[tys]["slot"]}`
-//         section2.appendChild(p7)
-//         const type = types[tys]["type"]
-//         for(ty in type){
-
-//             const p9 = document.createElement("h2")
-//             p9.textContent = `Type:`
-//             section2.appendChild(p9)
-//             const p8 = document.createElement("p")
-//             p8.textContent = `${type["name"]}`
-//             section2.appendChild(p8)
-//         }
-//     }
+    const p1 = document.createElement("p");
+    p1.textContent = `Base Experiance: ${obj["base_experience"]}`
+    header2.appendChild(p1)
 
 
-//     for(abil in abilitie){
-//         const p5 = document.createElement("p");
-//         p5.textContent = `Abilities: ${abilitie[abil]["name"]}`
-//         section2.appendChild(p5)
-//     }
+    const p2 = document.createElement("p");
+    p2.textContent = `Height: ${obj["height"]}`
+    header2.appendChild(p2)
+    const p6 = document.createElement("p");
+    p6.textContent = `Weight: ${obj["weight"]}`
+    header2.appendChild(p6)
+    const p3 = document.createElement("p");
+    p3.textContent = `Order: ${obj["order"]}`
+    header2.appendChild(p3)
+    const p4 = document.createElement("p");
+    p4.textContent = `Id: ${obj["id"]}`
+    header2.appendChild(p4)
+}
 
-//     for(stat in status){
+function createSection(obj) {
+    const abilitie = obj["abilities"];
 
-//         const stats = status[stat]["stat"]
+    const types = obj["types"];
 
-//         for(st in stats){
-//             const p11 = document.createElement("h3")
-//             p11.textContent = `${stats["name"]}`
-//             section2.appendChild(p11)
-//         }
+    const status = obj["stats"]
 
-//         const p10 = document.createElement("p")
-//         p10.textContent = `${status[stat]["base_stat"]}`
-//         section2.appendChild(p10)
+    for (tys in types) {
+        const p7 = document.createElement("p");
+        p7.textContent = `Slot: ${types[tys]["slot"]}`
+        section2.appendChild(p7)
+        const type = types[tys]["type"]
+        for (ty in type) {
 
-//         const p12 = document.createElement("p")
-//         p12.textContent = `${status[stat]["effort"]}`
-//         section2.appendChild(p12)
+            const p9 = document.createElement("h2")
+            p9.textContent = `Type:`
+            section2.appendChild(p9)
+            const p8 = document.createElement("p")
+            p8.textContent = `${type["name"]}`
+            section2.appendChild(p8)
+        }
+    }
 
 
-//     }
+    for (abil in abilitie) {
+        const p5 = document.createElement("p");
+        p5.textContent = `Abilities: ${abilitie[abil]["name"]}`
+        section2.appendChild(p5)
+    }
+
+    for (stat in status) {
+
+        const stats = status[stat]["stat"]
+
+        for (st in stats) {
+            const p11 = document.createElement("h3")
+            p11.textContent = `${stats["name"]}`
+            section2.appendChild(p11)
+        }
+
+        const p10 = document.createElement("p")
+        p10.textContent = `${status[stat]["base_stat"]}`
+        section2.appendChild(p10)
+
+        const p12 = document.createElement("p")
+        p12.textContent = `${status[stat]["effort"]}`
+        section2.appendChild(p12)
 
 
-
-
-<<<<<<< HEAD
-// }
+    }
 
 
 
 
-let charizard = `{
+    // }
+
+
+
+
+    let charizard = `{
     "abilities": [{
             "name": "blaze"
         },
@@ -379,96 +378,93 @@ let charizard = `{
 }`;
 
 
-let chariObj = JSON.parse(charizard);
+    // let chariObj = JSON.parse(charizard);
 
-function chariHeader() {
-    let header = document.getElementById("header")
-    let pokiName = document.createElement("h1");
-    let pokiOrder = document.createElement("h1");
-    pokiOrder.id = "pokOrder";
-    pokiOrder.textContent = `${chariObj["order"]}`;
-    pokiName.textContent = `${chariObj["name"]}`;
-    pokiName.id = "pokiName";
-    let id = document.createElement("h2");
-    id.id = "id";
-    id.textContent = `(${chariObj.id})`
-    header.appendChild(pokiOrder);
-    header.appendChild(pokiName);
-    header.appendChild(id);
-};
-chariHeader(chariObj);
+    // function chariHeader() {
+    //     let header = document.getElementById("header")
+    //     let pokiName = document.createElement("h1");
+    //     let pokiOrder = document.createElement("h1");
+    //     pokiOrder.id = "pokOrder";
+    //     pokiOrder.textContent = `${chariObj["order"]}`;
+    //     pokiName.textContent = `${chariObj["name"]}`;
+    //     pokiName.id = "pokiName";
+    //     let id = document.createElement("h2");
+    //     id.id = "id";
+    //     id.textContent = `(${chariObj.id})`
+    //     header.appendChild(pokiOrder);
+    //     header.appendChild(pokiName);
+    //     header.appendChild(id);
+    // };
+    // chariHeader(chariObj);
 
-function chariPicture() {
-    let picture = document.getElementById("picute");
-};
-chariPicture();
+    // function chariPicture() {
+    //     let picture = document.getElementById("picute");
+    // };
+    // chariPicture();
 
-function createPowers() {
-    let stati = chariObj["stats"];
-    let i = 0;
-    for (statistics in stati) {
-        let statSec = document.createElement("div");
-        statSec.id = "statSec";
-        if (stati[statistics]["stat"]["name"] == "hp") {
-            let baseText = document.createElement("h1");
-            baseText.id = "health";
-            baseText.textContent = `${stati[statistics]["base_stat"]}`;
-            header.appendChild(baseText);
-        }
-        if (stati[statistics]["stat"]["name"] != "hp") {
-            let moveText = document.createElement("h1");
-            moveText.id = "move";
-            let baseText = document.createElement("p");
-            baseText.id = "base";
-            let effortText = document.createElement("p");
-            effortText.id = "effort"
-            moveText.textContent = `${stati[statistics]["stat"]["name"]}`;
-            baseText.textContent = `base stat: ${stati[statistics]["base_stat"]}`;
-            effortText.textContent = `effort: ${stati[statistics]["effort"]}`;
-            stats.appendChild(statSec);
-            statSec.appendChild(moveText);
-            statSec.appendChild(baseText);
-            statSec.appendChild(effortText);
-        }
-        if (stati[statistics]["stat"]["name"] == "special-attack" || stati[statistics]["stat"]["name"] == "special-defense") {
-            statSec.id = "statSec2";
-        }
-        if (stati[statistics]["stat"]["name"] == "speed") {
-            statSec.id = "statSec3";
-        }
-    }
-    let statSec = document.createElement("div");
-    statSec.id = "statSec3";
-    let weightHeader = document.createElement("h1");
-    weightHeader.textContent = "Weight";
-    let weightText = document.createElement("p");
-    weightText.textContent = `${chariObj["weight"]}`;
-    statSec.appendChild(weightHeader);
-    statSec.appendChild(weightText);
-    stats.appendChild(statSec);
-};
-createPowers();
+    // function createPowers() {
+    //     let stati = chariObj["stats"];
+    //     let i = 0;
+    //     for (statistics in stati) {
+    //         let statSec = document.createElement("div");
+    //         statSec.id = "statSec";
+    //         if (stati[statistics]["stat"]["name"] == "hp") {
+    //             let baseText = document.createElement("h1");
+    //             baseText.id = "health";
+    //             baseText.textContent = `${stati[statistics]["base_stat"]}`;
+    //             header.appendChild(baseText);
+    //         }
+    //         if (stati[statistics]["stat"]["name"] != "hp") {
+    //             let moveText = document.createElement("h1");
+    //             moveText.id = "move";
+    //             let baseText = document.createElement("p");
+    //             baseText.id = "base";
+    //             let effortText = document.createElement("p");
+    //             effortText.id = "effort"
+    //             moveText.textContent = `${stati[statistics]["stat"]["name"]}`;
+    //             baseText.textContent = `base stat: ${stati[statistics]["base_stat"]}`;
+    //             effortText.textContent = `effort: ${stati[statistics]["effort"]}`;
+    //             stats.appendChild(statSec);
+    //             statSec.appendChild(moveText);
+    //             statSec.appendChild(baseText);
+    //             statSec.appendChild(effortText);
+    //         }
+    //         if (stati[statistics]["stat"]["name"] == "special-attack" || stati[statistics]["stat"]["name"] == "special-defense") {
+    //             statSec.id = "statSec2";
+    //         }
+    //         if (stati[statistics]["stat"]["name"] == "speed") {
+    //             statSec.id = "statSec3";
+    //         }
+    //     }
+    //     let statSec = document.createElement("div");
+    //     statSec.id = "statSec3";
+    //     let weightHeader = document.createElement("h1");
+    //     weightHeader.textContent = "Weight";
+    //     let weightText = document.createElement("p");
+    //     weightText.textContent = `${chariObj["weight"]}`;
+    //     statSec.appendChild(weightHeader);
+    //     statSec.appendChild(weightText);
+    //     stats.appendChild(statSec);
+    // };
+    // createPowers();
 
-function createTypes() {
-    let types = chariObj["types"];
-    let typeDiv = document.createElement("div");
-    for (typer of types) {
-        let type = typer.type.name;
-        typeDiv.id = "typeDiv";
-        let typeText = document.createElement("h3");
-        if (type == "fire") {
-            typeText.id = "fire";
-            typeText.textContent = `${type}`;
-            typeDiv.appendChild(typeText);
-        } else {
-            typeText.id = "flying";
-            typeText.textContent = `${type}`;
-            typeDiv.appendChild(typeText);
-        }
-        stats.appendChild(typeDiv);
-    }
-}
-createTypes();
-=======
-// }
->>>>>>> 3dafefc766c1e30628024c6892adfe2d9be19a0b
+    // function createTypes() {
+    //     let types = chariObj["types"];
+    //     let typeDiv = document.createElement("div");
+    //     for (typer of types) {
+    //         let type = typer.type.name;
+    //         typeDiv.id = "typeDiv";
+    //         let typeText = document.createElement("h3");
+    //         if (type == "fire") {
+    //             typeText.id = "fire";
+    //             typeText.textContent = `${type}`;
+    //             typeDiv.appendChild(typeText);
+    //         } else {
+    //             typeText.id = "flying";
+    //             typeText.textContent = `${type}`;
+    //             typeDiv.appendChild(typeText);
+    //         }
+    //         stats.appendChild(typeDiv);
+    //     }
+    // }
+    // createTypes();
