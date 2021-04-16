@@ -63,32 +63,85 @@ let charmander = `{
     }],
     "weight": 85
 }`;
-const { name: n, stats: newStats, abilities: abils, id, ...theRest } = charmander
-console.log(n, newStats, abils, id, theRest)
-let header2 = document.getElementById("header2");
-let section = document.getElementById("stats2");
-let charmanderObj = JSON.parse(charmander);
 
-function createCard(obj) {
-    const H1 = document.createElement("h1")
-    const DIV = document.createElement("div")
-    DIV.className = document.createElement("card-body")
-    H1.className = `${"card-title"}`
-    H1.textContent = `${obj["name"]}`
-    header2.appendChild(H1)
-    const p1 = document.createElement("p");
-    p1.textContent = `Base Experiance: ${obj["base_experience"]}`
-    header2.appendChild(p1)
+let charmObj = JSON.parse(charmander);
 
-    const p2 = document.createElement("p");
-    p2.textContent = `Height: ${obj["height"]}`
-    header2.appendChild(p2)
-    const p3 = document.createElement("p");
-    p3.textContent = `Order: ${obj["order"]}`
-    header2.appendChild(p3)
+function chariHeader() {
+    let header1 = document.getElementById("header1");
+    let pokimonName = document.createElement("h1");
+    let pokiOrder = document.createElement("h1");
+    pokiOrder.id = "pokOrder1";
+    pokiOrder.textContent = `${charmObj["order"]}`;
+    pokimonName.textContent = `${charmObj["name"]}`;
+    pokimonName.id = "pokiName1";
+    let id = document.createElement("h2");
+    id.id = "id1";
+    id.textContent = `(${charmObj.id})`
+    header1.appendChild(pokiOrder);
+    header1.appendChild(pokimonName);
+    header1.appendChild(id);
+};
+chariHeader(charmObj);
+
+
+function createPowers() {
+    let stati = charmObj["stats"];
+    let i = 0;
+    for (statistics in stati) {
+        let statSec = document.createElement("div");
+        statSec.id = "statSecs";
+        if (stati[statistics]["stat"]["name"] == "hp") {
+            let baseText = document.createElement("h3");
+            baseText.id = "hp";
+            baseText.textContent = `${stati[statistics]["base_stat"]}`;
+            header1.appendChild(baseText);
+        }
+        if (stati[statistics]["stat"]["name"] != "hp") {
+            let moveText = document.createElement("h1");
+            let baseText = document.createElement("p");
+            let effortText = document.createElement("p");
+            moveText.textContent = `${stati[statistics]["stat"]["name"]}`;
+            baseText.textContent = `base stat: ${stati[statistics]["base_stat"]}`;
+            effortText.textContent = `effort: ${stati[statistics]["effort"]}`;
+            stats1.appendChild(statSec);
+            statSec.appendChild(moveText);
+            statSec.appendChild(baseText);
+            statSec.appendChild(effortText);
+        }
+        if (stati[statistics]["stat"]["name"] == "special-attack" || stati[statistics]["stat"]["name"] == "special-defense") {
+            statSec.id = "statSecs2";
+        }
+        if (stati[statistics]["stat"]["name"] == "speed") {
+            statSec.id = "statSecs3";
+        }
+    }
+    let statSec = document.createElement("div");
+    statSec.id = "statSecs3";
+    let weightHeader = document.createElement("h1");
+    weightHeader.textContent = "Weight";
+    let weightText = document.createElement("p");
+    weightText.textContent = `${charmObj["weight"]}`;
+    statSec.appendChild(weightHeader);
+    statSec.appendChild(weightText);
+    stats1.appendChild(statSec);
+};
+createPowers();
+
+function createTypes() {
+    let types = charmObj["types"];
+    for (typer of types) {
+        let type = typer.type.name;
+        let typeDiv = document.createElement("div");
+        let typeText = document.createElement("h3");
+        if (type == "fire") {
+            typeDiv.id = "fires";
+            typeText.textContent = `${type}`;
+            typeDiv.appendChild(typeText);
+        }
+        stats1.appendChild(typeDiv);
+    }
 }
-
-// createCard(charmanderObj);
+createTypes();
 // Everett // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
@@ -246,6 +299,7 @@ let charmeleon = `{
 
 
 
+<<<<<<< HEAD
 // }
 
 
@@ -415,3 +469,6 @@ function createTypes() {
     }
 }
 createTypes();
+=======
+// }
+>>>>>>> 3dafefc766c1e30628024c6892adfe2d9be19a0b

@@ -1,12 +1,25 @@
+<<<<<<< HEAD
 #charHTML{
     border: 8px orange solid;
     border-radius: 2%;
     background-color: black;
     #charBody{
+=======
+#charmander1 {
+    background-image: url("card-background.png");
+    background-size: 100%;
+}
+
+html {
+    border: 8px orange solid;
+    border-radius: 2%;
+    background-color: black;
+    body {
+>>>>>>> 3dafefc766c1e30628024c6892adfe2d9be19a0b
         background-image: url("background-img.png");
         width: 100%;
         background-size: 100%;
-        #header{
+        #header {
             display: inline-flex;
             width: 100%;
         }
@@ -17,22 +30,27 @@
             width: 23%;
             background-size: 150%;
         }
-        #pokiName{
+        #pokiName {
             margin-left: 40%;
         }
-        #id{
+        #id {
             margin-top: 4px;
         }
-        #health{
+        #health {
             margin-left: 42%;
         }
+<<<<<<< HEAD
         #statSec{
             display: inline-flex;  
+=======
+        #statSec {
+            display: inline-flex;
+>>>>>>> 3dafefc766c1e30628024c6892adfe2d9be19a0b
         }
-        #typeDiv{
+        #typeDiv {
             display: inline-flex;
             width: 100%;
-            #fire{
+            #fire {
                 background-color: red;
                 font: bolder;
                 font-size: 47px;
@@ -40,7 +58,7 @@
                 width: 50%;
                 height: 60px;
             }
-            #flying{
+            #flying {
                 background-color: orange;
                 font: bolder;
                 font-size: 47px;
