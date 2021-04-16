@@ -210,7 +210,7 @@ let charmeleon = `{
 let header2 = document.getElementById("header1");
 let section2 = document.getElementById("stats1");
 let charmeleonObj = JSON.parse(charmeleon);
-function createHeader(charmeleonObj){
+function createsHeader(charmeleonObj){
     const H1 = document.createElement("h1");
     H1.textContent = `${obj["name"]}`
     header2.appendChild(H1)
@@ -231,7 +231,7 @@ function createHeader(charmeleonObj){
     header2.appendChild(p4)
     }
 
-function createSection(charmeleonObj){
+function createsSection(charmeleonObj){
     const abilities = obj["abilities"];
     const types = obj["types"];
     const status = obj["stats"]
@@ -269,8 +269,8 @@ function createSection(charmeleonObj){
         section2.appendChild(p12)
     }
 }
-createHeader(charmeleonObj);
-createSection(charmeleonObj);
+// createsHeader(charmeleonObj);
+// createsSection(charmeleonObj);
 
 let charizard = `{
     "abilities": [{
