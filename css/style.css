@@ -3,26 +3,66 @@
   background-size: 100%;
 }
 
-body {
-  width: 100%;
+html {
+  border: 8px orange solid;
+  border-radius: 2%;
+  background-color: black;
 }
 
-body #header {
+html body {
+  background-image: url("background-img.png");
+  width: 100%;
+  background-size: 100%;
+}
+
+html body #header {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  background-color: red;
+}
+
+html body #pokiName {
+  margin-left: 40%;
+}
+
+html body #id {
+  margin-top: 4px;
+}
+
+html body #health {
+  margin-left: 42%;
+}
+
+html body #statSec {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+html body #typeDiv {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   width: 100%;
 }
 
-body #pokiName {
-  margin-left: 40%;
+html body #typeDiv #fire {
+  background-color: red;
+  font: bolder;
+  font-size: 47px;
+  text-align: center;
+  width: 50%;
+  height: 60px;
 }
 
-body #id {
-  margin-top: 4px;
-}
-
-body #health {
-  margin-left: 43%;
+html body #typeDiv #flying {
+  background-color: orange;
+  font: bolder;
+  font-size: 47px;
+  text-align: center;
+  width: 50%;
+  height: 60px;
 }
 /*# sourceMappingURL=style.css.map */
