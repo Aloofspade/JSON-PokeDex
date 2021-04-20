@@ -1,4 +1,19 @@
+//font-family: 'Zen Dots', cursive;
+
+
+
+html{
+    background: url("https://cdn.statically.io/img/i.pinimg.com/originals/1c/a6/e1/1ca6e1c35e2d884230242cc0326dbf28.jpg") no-repeat center center fixed ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+ 
+   
+      
+
 body{
+    
     #surround{
         #header{
             display: inline-flex;
@@ -11,4 +26,329 @@ body{
             }
         }
     }
+   
+
+    $color1: #F24C3D;
+    $color2: #F27C38;
+    $color3: #F2CD5C;
+    
+    
+    #surround1{
+        
+        background: linear-gradient($color1, $color2,$color3);
+        width: 320px;
+        height: 480px;
+        background-size: unset;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 15px;
+        border: solid 5px yellow;
+        box-shadow: -3px -3px 3px 0 rgba(#F2D852, 0.3), 3px 3px 3px 0 rgba($color1, 0.3), 0 0 6px 2px rgba(#ffe759, 0.3),
+         0 35px 25px -15px rgba(0, 0, 0, 0.3);
+       position: fixed;
+        top: 20%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 20px 10px;
+        animation: holoCard 15s ease infinite;
+
+
+          
+        
+
+        #picture1{
+                
+            h1{
+                text-align: center;
+                font-size: 30px;
+                font-family: 'Zen Dots', cursive;
+            }
+            img{
+                border: 2px solid red;
+                box-shadow: -3px -3px 3px 0 rgba(black, 0.3), 3px 3px 3px 0 rgba($color1, 0.3), 0 0 6px 2px rgba(#ffe759, 0.3),
+                 0 35px 25px -15px rgba(0, 0, 0, 0.3);
+                position: relative;
+                width: 250px;
+                height: 150px;
+                left: 10%;
+                top: 10%;
+               
+            }
+           
+        }
+        #header1{
+            display: grid;
+            grid-template: 50px / auto auto auto auto auto ;
+           margin: 2px;
+           padding: 2px;
+            
+          width: 340px;
+
+           h2{
+               font-family: 'Zen Dots', cursive;
+               grid-row: 1/2;
+               font-size: 10px;
+               padding: 11px;
+               
+           }
+            p1{
+                
+                grid-column: 1/2;
+               grid-row: 2/3;
+                font-size: 10px;
+                font-family: 'Zen Dots', cursive;
+                border-bottom: solid 2px black;
+               border-radius: 10px;
+               padding-bottom: 5px;
+               text-align: center;
+               color: red;
+               
+              
+            }   
+            h7{
+                grid-row: 1/2;
+                font-family: 'Zen Dots', cursive;
+                margin: 10px;
+                font-size: 10px;
+                
+            }
+            p2{
+                grid-column: 2/3;
+                grid-row: 2/3;
+                font-size: 10px;
+                font-family: 'Zen Dots', cursive;
+                border-bottom: solid 2px black;
+               border-radius: 10px;
+               padding-bottom: 5px;
+               text-align: center;
+               color: red;
+            }
+
+            h8{
+                grid-row: 1/2;
+                font-family: 'Zen Dots', cursive;
+                margin: 10px;
+                font-size: 10px;
+            }
+            p6{
+                grid-column: 3/4;
+                grid-row: 2/3;
+                font-size: 10px;
+                font-family: 'Zen Dots', cursive;
+                border-bottom: solid 2px black;
+               border-radius: 10px;
+               padding-bottom: 5px;
+               text-align: center;
+               color: red;
+            }
+            h9{
+                grid-row: 3/4;
+                font-family: 'Zen Dots', cursive;
+                margin: 10px;
+                font-size: 10px;
+            }
+            p3{
+                grid-column: 1/2;
+                grid-row: 4/5;
+                font-size: 10px;
+                font-family: 'Zen Dots', cursive;
+                border-bottom: solid 2px black;
+               border-radius: 10px;
+               padding-bottom: 5px;
+               text-align: center;
+               color: #F56C01;
+            }
+            h10{
+                grid-row: 3/4;
+                font-family: 'Zen Dots', cursive;
+                margin: 10px;
+                font-size: 10px;
+            }
+            p4{
+                grid-column: 2/3;
+                grid-row: 4/5;
+                font-size: 10px;
+                font-family: 'Zen Dots', cursive;
+                border-bottom: solid 2px black;
+               border-radius: 10px;
+               padding-bottom: 5px;
+               text-align: center;
+               color: #F56C01;
+            }
+            h11{
+                grid-row: 3/4;
+                font-family: 'Zen Dots', cursive;
+                margin: 10px;
+                font-size: 10px;
+            }
+            p7{
+                    grid-column: 3/4;
+                    grid-row: 4/5;
+                    font-size: 10px;
+                    font-family: 'Zen Dots', cursive;
+                    border-bottom: solid 2px black;
+                   border-radius: 10px;
+                   padding-bottom: 5px;
+                   text-align: center;
+                   color: #F56C01;
+            }
+           
+        }
+        
+           
+                
+            
+
+            #stats1{
+                display: grid;
+                grid-template: 50px / auto auto auto auto auto auto ;
+               margin: 2px;
+               padding: 2px;
+               width: 340px;
+                h12{
+                    grid-row: 1/2;
+                font-family: 'Zen Dots', cursive;
+                margin: 10px;
+                font-size: 10px;
+                }
+                p8{
+                    grid-column: 1/2;
+                    grid-row: 2/3;
+                    font-size: 12px;
+                    font-family: 'Zen Dots', cursive;
+                    border-bottom: solid 2px black;
+                   border-radius: 10px;
+                   padding-bottom: 5px;
+                   text-align: center;
+                   color: red;
+                   font-size: 10px;
+                }
+
+              //Abilities
+
+                h13{
+                    grid-row: 1/2;
+                    font-family: 'Zen Dots', cursive;
+                    margin: 10px;
+                    font-size: 10px;
+                    
+                   }
+                   p5{
+                    grid-row: 2/3;
+                   
+                    font-size: 10px;
+                    text-align: center;
+                    font-family: 'Zen Dots', cursive;
+                    color: red;
+                    border-radius: 10px;
+                    border-bottom: solid 2px black;
+                   }
+                //    h14{
+                //     grid-row: 1/2;
+                //     font-family: 'Zen Dots', cursive;
+                //     margin: 10px;
+                //     font-size: 5px;
+                //    }
+
+                //    p13{
+                //     grid-column: 3/4;
+                //     grid-row: 2/3;
+                //     font-size: 12px;
+                //     font-family: 'Zen Dots', cursive;
+                //     border-bottom: solid 2px black;
+                //    border-radius: 10px;
+                //    padding-bottom: 5px;
+                //    text-align: center;
+                //    color: red;
+                //    font-size: 5px;
+                //    }
+
+
+                 //stats
+                   h3{
+                    grid-row: 3/4;
+                    font-family: 'Zen Dots', cursive;
+                    font-size: 5px;
+                    
+                   }
+
+                   p10{
+                    grid-row: 4/5;
+                    font-size: 5px;
+                   
+                   }
+                   p12{
+                    grid-row: 5/6;
+                    font-size: 5px;
+                   }
+            }
+        
+    
+        
+
+        //shiney 
+
+  
+  .surround:after {
+    
+    animation: shine 5s ease-in-out  infinite;
+    animation-fill-mode: forwards;  
+    content: "";
+    position: fixed;
+    top: -110%;
+    left: -210%;
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+    transform: rotate(30deg);
+    
+    background: rgba(255, 255, 255, 0.13);
+    background: linear-gradient(
+      to right, 
+      rgba(255, 255, 255, 0.13) 0%,
+      rgba(255, 255, 255, 0.13) 77%,
+      rgba(255, 255, 255, 0.5) 92%,
+      rgba(255, 255, 255, 0.0) 100%
+    );
+  }
+  
+
+  
+  .surround:active:after {
+    opacity: 0;
+  }
+  
+  @keyframes shine{
+    10% {
+      opacity: 1;
+      top: -30%;
+      left: -30%;
+      transition-property: left, top, opacity;
+      transition-duration: 0.10s, 0.10s, 0.15s;
+      transition-timing-function: ease;
+    }
+    100% {
+      opacity: 0;
+      top: -30%;
+      left: -30%;
+      transition-property: left, top, opacity;
+    }
+  }
+        
+            
+          
+//float
+        
+
+
+  
+    
+    }
 }
+}
+
+
+

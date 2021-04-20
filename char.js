@@ -131,34 +131,73 @@ let charmeleon = `{
     "weight": 190
 }`;
 
+const {name: n, stats: newStats, abilities: abils, id, ...others} = charmeleon;
+  document.getElementById("header1").innerHTML = [n];
+
+
 let header2 = document.getElementById("header1");
+let picture2 = document.getElementById("picture1");
 let section2 = document.getElementById("stats1");
-let charmeleonObj = JSON.parse(charmeleon);
+let charmeleonObj = JSON.parse( charmeleon);
 
 createHeader(charmeleonObj);
 createSection(charmeleonObj);
+createPicture(charmeleonObj);
 
-function createHeader(obj){
+function createPicture(obj){
+
     const H1 = document.createElement("h1");
     H1.textContent = `${obj["name"]}`
-    header2.appendChild(H1)
-    
-    const p1 = document.createElement("p");
-    p1.textContent = `Base Experiance: ${obj["base_experience"]}`
-    header2.appendChild(p1)
-    
+    picture2.appendChild(H1)
 
-    const p2 = document.createElement("p");
-    p2.textContent = `Height: ${obj["height"]}`
+    const myImage = document.createElement("img");
+    myImage.src =  'image/charmeleon3.jpg';
+    picture2.appendChild(myImage);
+}
+
+function createHeader(obj){
+    //base 
+    const h2 = document.createElement("h2");
+    h2.textContent = `Base Experience:`;
+    header2.appendChild(h2)
+    const p1 = document.createElement("p1");
+    p1.textContent = ` ${obj["base_experience"]}`
+    header2.appendChild(p1)
+
+    //height
+    const h3 = document.createElement("h7");
+    h3.textContent = `Height:`;
+    header2.appendChild(h3)
+    const p2 = document.createElement("p2");
+    p2.textContent = `${obj["height"]}`
     header2.appendChild(p2)
-    const p6 = document.createElement("p");
-    p6.textContent = `Weight: ${obj["weight"]}`
+
+    //weight
+    const h4 = document.createElement("h8");
+    h4.textContent = `Weight:`;
+    header2.appendChild(h4)
+
+    const p6 = document.createElement("p6");
+    p6.textContent = `${obj["weight"]}`
     header2.appendChild(p6)
-    const p3 = document.createElement("p");
-    p3.textContent = `Order: ${obj["order"]}`
+
+    //order
+    const h5 = document.createElement("h9");
+    h5.textContent = `Order:`;
+    header2.appendChild(h5)
+
+    const p3 = document.createElement("p3");
+    p3.textContent = `${obj["order"]}`
     header2.appendChild(p3)
-    const p4 = document.createElement("p");
-    p4.textContent = `Id: ${obj["id"]}`
+
+    //id
+
+    const h6 = document.createElement("h10");
+    h6.textContent = `Id:`;
+    header2.appendChild(h6)
+
+    const p4 = document.createElement("p4");
+    p4.textContent = `${obj["id"]}`
     header2.appendChild(p4)
     
   
@@ -167,7 +206,7 @@ function createHeader(obj){
     
     }
 
-    
+
 
 function createSection(obj){
     const abilitie = obj["abilities"];
@@ -177,16 +216,26 @@ function createSection(obj){
     const status = obj["stats"]
 
     for(tys in types){
-        const p7 = document.createElement("p");
-        p7.textContent = `Slot: ${types[tys]["slot"]}`
-        section2.appendChild(p7)
+
+        //slot
+
+        const h7 = document.createElement("h11");
+        h7.textContent = `Slot:`;
+        header2.appendChild(h7)
+
+        const p7 = document.createElement("p7");
+        p7.textContent = `${types[tys]["slot"]}`
+        header2.appendChild(p7)
+
+        //Type
         const type = types[tys]["type"]
         for(ty in type){
 
-            const p9 = document.createElement("h2")
-            p9.textContent = `Type:`
-            section2.appendChild(p9)
-            const p8 = document.createElement("p")
+            const h8 = document.createElement("h12")
+            h8.textContent = `Type:`
+            section2.appendChild(h8)
+
+            const p8 = document.createElement("p8")
             p8.textContent = `${type["name"]}`
             section2.appendChild(p8)
         }
@@ -194,9 +243,23 @@ function createSection(obj){
 
 
     for(abil in abilitie){
-        const p5 = document.createElement("p");
-        p5.textContent = `Abilities: ${abilitie[abil]["name"]}`
+        //Abilities
+        const h9 = document.createElement("h13")
+        h9.textContent = `Abilities:`
+        section2.appendChild(h9)
+
+        const p5 = document.createElement("p5");
+        p5.textContent = `${abilitie[abil]["name"]}`
         section2.appendChild(p5)
+
+        // const h10 = document.createElement("h14")
+        // h10.textContent = `Abilities:`
+        // section2.appendChild(h10)
+
+
+        // const p13 = document.createElement("p13");
+        // p13.textContent = `${abilitie[abil]["name2"]}`
+        // section2.appendChild(p13)
     }
 
     for(stat in status){
@@ -207,15 +270,20 @@ function createSection(obj){
             const p11 = document.createElement("h3")
             p11.textContent = `${stats["name"]}`
             section2.appendChild(p11)
+
+            // arr = charmeleon.split(",");
+        //     const p11 = document.createElement("h3")
+        //     p11.textContent = `${["name", arr[0]]}`
+        //     section2.appendChild(p11)
         }
 
-        const p10 = document.createElement("p")
-        p10.textContent = `${status[stat]["base_stat"]}`
-        section2.appendChild(p10)
+        // const p10 = document.createElement("p10")
+        // p10.textContent = `${status[stat]["base_stat"]}`
+        // section2.appendChild(p10)
 
-        const p12 = document.createElement("p")
-        p12.textContent = `${status[stat]["effort"]}`
-        section2.appendChild(p12)
+        // const p12 = document.createElement("p12")
+        // p12.textContent = `${status[stat]["effort"]}`
+        // section2.appendChild(p12)
         
 
     }
@@ -224,7 +292,36 @@ function createSection(obj){
 
     
 }
-    
+
+//float
+
+!(function ($doc, $win) {
+	var screenWidth = $win.screen.width / 4,
+		screenHeight = $win.screen.height / 4,
+		$elems = $doc.getElementsByClassName("elem"),
+		validPropertyPrefix = '',
+		otherProperty = 'perspective(1000px)',
+		elemStyle = $elems[0].style;
+
+	if(typeof elemStyle.webkitTransform == 'string') {
+		validPropertyPrefix = 'webkitTransform';
+	} else if (typeof elemStyle.MozTransform == 'string') {
+		validPropertyPrefix = 'MozTransform';
+	}
+
+	$doc.addEventListener('mousemove', function (e) {
+		var centroX = e.clientX - screenWidth,
+			centroY = screenHeight - (e.clientY + 13),
+			degX = centroX * 0.05,
+			degY = centroY * 0.05,
+			$elem
+
+		for (var i = 0; i < $elems.length; i++) {
+   			$elem = $elems[i];
+			$elem.style[validPropertyPrefix] = otherProperty + 'rotateY('+ degX +'deg)  rotateX('+ degY +'deg)';
+		};
+	});
+})(document, window);
 
 
 
