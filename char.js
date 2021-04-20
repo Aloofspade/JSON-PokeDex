@@ -73,28 +73,27 @@ let charizard = `{
 
 
 let chariObj = JSON.parse(charizard);
-
-function chariHeader() {
+function chariHeader(chariObj) {
     let header = document.getElementById("header");
     let pokiName = document.createElement("h1");
     let pokiOrder = document.createElement("h1");
+    let id = document.createElement("h2");
     pokiOrder.id = "pokOrder";
     pokiOrder.textContent = `${chariObj["order"]}`;
     pokiName.textContent = `${chariObj["name"]}`;
     pokiName.id = "pokiName";
-    let id = document.createElement("h2");
     id.id = "id";
     id.textContent = `(${chariObj.id})`;
     header.appendChild(pokiOrder);
     header.appendChild(pokiName);
     header.appendChild(id);
 };
-chariHeader(chariObj);
+chariHeader(chariObj)
 // function chariPicture() {
 //     let picture = document.getElementById("picute");
 // };
 // chariPicture();
-function createPowers() {
+function createPowers(chariObj) {
     let stati = chariObj["stats"];
     for (statistics in stati) {
         let statSec = document.createElement("div");
@@ -133,9 +132,8 @@ function createPowers() {
     statSec.appendChild(weightText);
     stats.appendChild(statSec);
 };
-createPowers();
-
-function createTypes() {
+createPowers(chariObj)
+function createTypes(chariObj) {
     let types = chariObj["types"];
     let typeDiv = document.createElement("div");
     for (typer of types) {
@@ -154,8 +152,7 @@ function createTypes() {
         stats.appendChild(typeDiv);
     }
 }
-createTypes();
-
+createTypes(chariObj)
 let charmander = `{
     "abilities": [{
             "name": "blaze"
@@ -224,8 +221,7 @@ let charmander = `{
 
 let charmObj = JSON.parse(charmander);
 
-function charmandersHeader() {
-    let header1 = document.getElementById("header1");
+function charmandersHeader(charmObj) {
     let pokimonName = document.createElement("h1");
     let dexOrd = document.createElement("h1");
     dexOrd.id = "pokOrder1";
@@ -235,11 +231,7 @@ function charmandersHeader() {
     let pokimonIdNum = document.createElement("h2");
     pokimonIdNum.id = "id1";
     pokimonIdNum.textContent = `(${charmObj.id})`;
-    header1.appendChild(dexOrd);
-    header1.appendChild(pokimonName);
-    header1.appendChild(pokimonIdNum);
 };
-
 function charmandersTypes() {
     let pokeType = charmObj["types"];
     let statistical = document.getElementById("stats1");
@@ -252,8 +244,7 @@ function charmandersTypes() {
         statistical.appendChild(typesDiv);
     }
 }
-
-function charmandersPowers() {
+function charmandersPowers(charmObj) {
     let statistical = document.getElementById("stats1");
     let statis = charmObj["stats"];
     let i = 0;
@@ -275,7 +266,6 @@ function charmandersPowers() {
             let baseExpText = document.createElement("h3");
             baseExpText.id = "hp";
             baseExpText.textContent = `${statis[statistics]["base_stat"]}`;
-            header1.appendChild(baseExpText);
         }
         if (statis[statistics]["stat"]["name"] == "special-attack" || statis[statistics]["stat"]["name"] == "special-defense") {
             statsArea.id = "stat2";
@@ -294,9 +284,7 @@ function charmandersPowers() {
     statsArea.appendChild(weightStatText);
     statistical.appendChild(statsArea);
 };
-// charmandersHeader(charmObj);
-// charmandersPowers(charmObj);
-// charmandersTypes(charmObj);
+
 // Everett // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 let charmeleon = `{
@@ -427,5 +415,6 @@ function createsSection(charmeleonObj){
         section2.appendChild(p12)
     }
 }
-// createsHeader(charmeleonObj);
-// createsSection(charmeleonObj);
+charmandersPowers(charmObj);
+charmandersHeader(charmObj);
+charmandersTypes(charmObj);
