@@ -1,0 +1,21 @@
+#landing {
+  background-color: maroon;
+  background-size: 93%;
+}
+
+body {
+  background: url("pokemon.jpg") no-repeat center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: 'Zen Dots', cursive;
+  color: black;
+  text-align: center;
+}
+
+.navbar a {
+  color: maroon;
+}
+/*# sourceMappingURL=style.css.map */
