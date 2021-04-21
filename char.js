@@ -146,10 +146,15 @@ function createTypes(chariObj) {
         stats.appendChild(typeDiv);
     }
 }
+let clicks = 1;
 $("#izardHTML").on("click", function(){
-    chariHeader(chariObj)
-    createPowers(chariObj)
-    createTypes(chariObj)
+    if(clicks == 1){
+        chariHeader(chariObj);
+        createPowers(chariObj);
+        createTypes(chariObj);
+        $("#click").hide();
+    }
+    clicks++;
 })
 let charmander = `{
     "abilities": [{

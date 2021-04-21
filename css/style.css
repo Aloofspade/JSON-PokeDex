@@ -28,7 +28,7 @@
 }
 
 #izardHTML {
-  background-color: black;
+  background-color: white;
 }
 
 #izardHTML a {
@@ -146,5 +146,12 @@
   text-align: center;
   width: 50%;
   height: 60px;
+}
+
+#izardHTML #click {
+  margin-top: 5%;
+  font-size: xx-large;
+  color: orange;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
