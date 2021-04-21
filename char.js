@@ -88,11 +88,6 @@ function chariHeader(chariObj) {
     header.appendChild(pokiName);
     header.appendChild(id);
 };
-chariHeader(chariObj)
-// function chariPicture() {
-//     let picture = document.getElementById("picute");
-// };
-// chariPicture();
 function createPowers(chariObj) {
     let stati = chariObj["stats"];
     for (statistics in stati) {
@@ -132,7 +127,6 @@ function createPowers(chariObj) {
     statSec.appendChild(weightText);
     stats.appendChild(statSec);
 };
-createPowers(chariObj)
 function createTypes(chariObj) {
     let types = chariObj["types"];
     let typeDiv = document.createElement("div");
@@ -152,7 +146,11 @@ function createTypes(chariObj) {
         stats.appendChild(typeDiv);
     }
 }
-createTypes(chariObj)
+$("#izardHTML").on("click", function(){
+    chariHeader(chariObj)
+    createPowers(chariObj)
+    createTypes(chariObj)
+})
 let charmander = `{
     "abilities": [{
             "name": "blaze"
@@ -220,8 +218,8 @@ let charmander = `{
 }`;
 
 let charmObj = JSON.parse(charmander);
-
-function charmandersHeader(charmObj) {
+$("#charBody").on("click", function(){
+    let header1 = document.getElementById("header1")
     let pokimonName = document.createElement("h1");
     let dexOrd = document.createElement("h1");
     dexOrd.id = "pokOrder1";
@@ -231,8 +229,9 @@ function charmandersHeader(charmObj) {
     let pokimonIdNum = document.createElement("h2");
     pokimonIdNum.id = "id1";
     pokimonIdNum.textContent = `(${charmObj.id})`;
-};
-function charmandersTypes() {
+    header1.appendChild(dexOrd);
+    header1.appendChild(pokimonName);
+    header1.appendChild(pokimonIdNum);
     let pokeType = charmObj["types"];
     let statistical = document.getElementById("stats1");
     for (pokType of pokeType) {
@@ -243,9 +242,6 @@ function charmandersTypes() {
         typesDiv.appendChild(typesText);
         statistical.appendChild(typesDiv);
     }
-}
-function charmandersPowers(charmObj) {
-    let statistical = document.getElementById("stats1");
     let statis = charmObj["stats"];
     let i = 0;
     for (statistics in statis) {
@@ -283,8 +279,7 @@ function charmandersPowers(charmObj) {
     statsArea.appendChild(weightHead);
     statsArea.appendChild(weightStatText);
     statistical.appendChild(statsArea);
-};
-
+})
 // Everett // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 let charmeleon = `{
@@ -356,7 +351,7 @@ let charmeleon = `{
 let header2 = document.getElementById("header1");
 let section2 = document.getElementById("stats1");
 let charmeleonObj = JSON.parse(charmeleon);
-function createsHeader(charmeleonObj){
+function createsHeader(charmeleonObj) {
     const H1 = document.createElement("h1");
     H1.textContent = `${obj["name"]}`
     header2.appendChild(H1)
@@ -377,16 +372,16 @@ function createsHeader(charmeleonObj){
     header2.appendChild(p4)
 }
 
-function createsSection(charmeleonObj){
+function createsSection(charmeleonObj) {
     const abilities = obj["abilities"];
     const types = obj["types"];
     const status = obj["stats"]
-    for(tys in types){
+    for (tys in types) {
         const p7 = document.createElement("p");
         p7.textContent = `Slot: ${types[tys]["slot"]}`
         section2.appendChild(p7)
         const type = types[tys]["type"]
-        for(ty in type){
+        for (ty in type) {
             const p9 = document.createElement("h2")
             p9.textContent = `Type:`
             section2.appendChild(p9)
@@ -395,14 +390,14 @@ function createsSection(charmeleonObj){
             section2.appendChild(p8)
         }
     }
-    for(abil in abilitie){
+    for (abil in abilitie) {
         const p5 = document.createElement("p");
         p5.textContent = `Abilities: ${abilitie[abil]["name"]}`
         section2.appendChild(p5)
     }
-    for(stat in status){
+    for (stat in status) {
         const stats = status[stat]["stat"]
-        for(st in stats){
+        for (st in stats) {
             const p11 = document.createElement("h3")
             p11.textContent = `${stats["name"]}`
             section2.appendChild(p11)
@@ -415,6 +410,3 @@ function createsSection(charmeleonObj){
         section2.appendChild(p12)
     }
 }
-charmandersPowers(charmObj);
-charmandersHeader(charmObj);
-charmandersTypes(charmObj);
