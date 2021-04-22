@@ -391,9 +391,9 @@ function createPicture(charmeleonObj){
 
 function createHeader(charmeleonObj){
     //base 
-    const h2 = document.createElement("h2");
-    h2.textContent = `Base Experience:`;
-    header2.appendChild(h2)
+//     const h2 = document.createElement("h2");
+//     h2.textContent = `Base Experience:`;
+//     header2.appendChild(h2)
     const p1 = document.createElement("p1");
     p1.textContent = ` ${obj["base_experience"]}`
     header2.appendChild(p1)
