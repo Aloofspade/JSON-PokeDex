@@ -378,7 +378,7 @@ $(charmBody).on("click", function(){
 	createHeader(charmeleonObj);
 	createSection(charmeleonObj);
 	createPicture(charmeleonObj);
-}
+})
 
 function createPicture(charmeleonObj){
 
