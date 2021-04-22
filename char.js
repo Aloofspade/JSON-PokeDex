@@ -415,3 +415,5 @@ function createsSection(charmeleonObj) {
         section2.appendChild(p12)
     }
 }
+createsSection(charmeleonObj);
+createsHeader(charmeleonObj)
