@@ -378,9 +378,9 @@ function createsHeader(charmeleonObj) {
 }
 
 function createsSection(charmeleonObj) {
-    const abilitie = obj["abilities"];
-    const types = obj["types"];
-    const status = obj["stats"]
+    const abilitie = charmeleonObj["abilities"];
+    const types = charmeleonObj["types"];
+    const status = charmeleonObj["stats"]
     for (tys in types) {
         const p7 = document.createElement("p");
         p7.textContent = `Slot: ${types[tys]["slot"]}`
