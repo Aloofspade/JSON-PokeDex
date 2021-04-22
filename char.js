@@ -378,7 +378,7 @@ function createsHeader(charmeleonObj) {
 }
 
 function createsSection(charmeleonObj) {
-    const abilities = obj["abilities"];
+    const abilitie = obj["abilities"];
     const types = obj["types"];
     const status = obj["stats"]
     for (tys in types) {
