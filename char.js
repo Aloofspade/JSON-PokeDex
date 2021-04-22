@@ -374,7 +374,7 @@ let picture2 = document.getElementById("picture1");
 let section2 = document.getElementById("stats1");
 let charmeleonObj = JSON.parse(charmeleon);
 
-$(charmBody).on("click", function(){
+$("#charmBody").on("click", function(){
 	createHeader(charmeleonObj);
 	createSection(charmeleonObj);
 	createPicture(charmeleonObj);
