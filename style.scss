@@ -1,4 +1,4 @@
-//font-family: 'Zen Dots', cursive;
+// font-family: 'Zen Dots', cursive;
 
 
 
@@ -14,30 +14,89 @@ html{
 
 body{
     
-    #surround{
-        #header{
-            display: inline-flex;
-            width: 100%;
-            #pokiName{
-                text-align: center;
-            }
-            #health{
-                margin-left: 75%;
-            }
-        }
-    }
+    // #surround{
+    //     #header{
+    //         display: inline-flex;
+    //         width: 100%;
+    //     }
+    //     #picture {
+    //         margin-left: 37%;
+    //         //https://www.google.com/imgres?imgurl=http%3A%2F%2Fwww.smashbros.com%2Fimages%2Fog%2Flizardon.jpg&imgrefurl=https%3A%2F%2Fwww.smashbros.com%2Fwiiu-3ds%2Fsp%2Fus%2Fcharacters%2Flizardon.html&tbnid=3dEQfNqCgguUJM&vet=10CHoQMyiYAWoXChMIqOPv0MCL8AIVAAAAAB0AAAAAEAg..i&docid=fnWVSMCQgp6oMM&w=1500&h=1500&itg=1&q=charizard&safe=strict&ved=0CHoQMyiYAWoXChMIqOPv0MCL8AIVAAAAAB0AAAAAEAg
+    //         //image source/credit ^
+    //         background-image: url(chari.jpg);
+    //         height: 27.1vh;
+    //         width: 27.1%;
+    //         background-size: cover;
+    //         border: red solid 5px;
+    //     }
+    //     #pokiName {
+    //         margin-left: 31%;
+    //     }
+    //     #id {
+    //         margin-top: 4px;
+    //     }
+    //     #health {
+    //         margin-left: 33.2%;
+    //     }
+    //     #stats {
+    //         #statSec {
+    //             display: flex;
+    //             justify-content: center;
+    //             #move {
+    //                 padding-right: 10%;
+    //                 width: 50%;
+    //             }
+    //                  #weight {
+    //                 width: 88%;
+    //                 padding-right: 50%;
+    //             }
+    //             #base {
+    //                 font: bolder;
+    //                 color: black;
+    //                 font-size: xx-large;
+    //             }
+    //             #effort {
+    //                 margin-left: 30px;
+    //                 font: bolder;
+    //                 color: black;
+    //                 font-size: xx-large;
+    //             }
+    //         }
+    //     }
+    //     #typeDiv {
+    //         display: inline-flex;
+    //         width: 100%;
+    //         #fire {
+    //             background-color: #F08030;
+    //             font: bolder;
+    //             color: white;
+    //             font-size: 47px;
+    //             text-align: center;
+    //             width: 50%;
+    //             height: 60px;
+    //         }
+    //         #flying {
+    //             background-color: #A890F0;
+    //             font: bolder;
+    //             color: white;
+    //             font-size: 47px;
+    //             text-align: center;
+    //             width: 50%;
+    //             height: 60px;
+    //         }
+    //     }
+    // }
    
 
     $color1: #F24C3D;
     $color2: #F27C38;
     $color3: #F2CD5C;
-    
-    
+   
     #surround1{
         
         background: linear-gradient($color1, $color2,$color3);
         width: 320px;
-        height: 480px;
+        height: 489px;
         background-size: unset;
         background-repeat: no-repeat;
         background-position: center;
@@ -209,34 +268,44 @@ body{
                padding: 2px;
                width: 340px;
                 h12{
-                    grid-row: 1/2;
+                 grid-row: 1/2;
                 font-family: 'Zen Dots', cursive;
-                margin: 10px;
                 font-size: 10px;
+                margin: auto;
+                padding: 10px;
+               
                 }
                 p8{
+                 
                     grid-column: 1/2;
                     grid-row: 2/3;
-                    font-size: 12px;
+                   
+                    font-size: 10px;
                     font-family: 'Zen Dots', cursive;
                     border-bottom: solid 2px black;
                    border-radius: 10px;
-                   padding-bottom: 5px;
                    text-align: center;
                    color: red;
-                   font-size: 10px;
+                 
+                  
                 }
+                
 
               //Abilities
 
                 h13{
-                    grid-row: 1/2;
-                    font-family: 'Zen Dots', cursive;
-                    margin: 10px;
-                    font-size: 10px;
                     
+                    grid-row: 1/4;
+                    font-family: 'Zen Dots', cursive;
+                  margin: auto;
+                    font-size: 10px;
+                    padding: 10px;
+                   
                    }
                    p5{
+                    
+                  
+                  
                     grid-row: 2/3;
                    
                     font-size: 10px;
@@ -246,43 +315,39 @@ body{
                     border-radius: 10px;
                     border-bottom: solid 2px black;
                    }
-                //    h14{
-                //     grid-row: 1/2;
-                //     font-family: 'Zen Dots', cursive;
-                //     margin: 10px;
-                //     font-size: 5px;
-                //    }
-
-                //    p13{
-                //     grid-column: 3/4;
-                //     grid-row: 2/3;
-                //     font-size: 12px;
-                //     font-family: 'Zen Dots', cursive;
-                //     border-bottom: solid 2px black;
-                //    border-radius: 10px;
-                //    padding-bottom: 5px;
-                //    text-align: center;
-                //    color: red;
-                //    font-size: 5px;
-                //    }
+            
 
 
                  //stats
                    h3{
-                    grid-row: 3/4;
+                   
+                    grid-row: 3/6;
                     font-family: 'Zen Dots', cursive;
-                    font-size: 5px;
-                    
+                    font-size: 10px;
+                  //  text-align: center;
+                  // margin: 0 5px;
+                  // padding: 0 10px;
+                  margin: 0 auto;
+                  vertical-align: bottom;
+                
                    }
 
                    p10{
                     grid-row: 4/5;
-                    font-size: 5px;
-                   
+                    font-size: 10px;
+                    margin: 0 auto;
+                    text-align: justify;
+                    vertical-align: middle;
+                     line-height: 0.7;
+                     word-spacing: -5px;
                    }
                    p12{
                     grid-row: 5/6;
-                    font-size: 5px;
+                    font-size: 10px;
+                    margin: 0 auto;
+                    text-align: justify;
+                    vertical-align: bottom;
+                    word-spacing: -5px;
                    }
             }
         

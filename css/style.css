@@ -3,26 +3,11 @@ html {
   background-size: cover;
 }
 
-html body #surround #header {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 100%;
-}
-
-html body #surround #header #pokiName {
-  text-align: center;
-}
-
-html body #surround #header #health {
-  margin-left: 75%;
-}
-
 html body #surround1 {
   background: -webkit-gradient(linear, left top, left bottom, from(#F24C3D), color-stop(#F27C38), to(#F2CD5C));
   background: linear-gradient(#F24C3D, #F27C38, #F2CD5C);
   width: 320px;
-  height: 480px;
+  height: 489px;
   background-size: unset;
   background-repeat: no-repeat;
   background-position: center;
@@ -237,8 +222,9 @@ html body #surround1 #stats1 h12 {
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   font-family: 'Zen Dots', cursive;
-  margin: 10px;
   font-size: 10px;
+  margin: auto;
+  padding: 10px;
 }
 
 html body #surround1 #stats1 p8 {
@@ -248,23 +234,22 @@ html body #surround1 #stats1 p8 {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  font-size: 12px;
+  font-size: 10px;
   font-family: 'Zen Dots', cursive;
   border-bottom: solid 2px black;
   border-radius: 10px;
-  padding-bottom: 5px;
   text-align: center;
   color: red;
-  font-size: 10px;
 }
 
 html body #surround1 #stats1 h13 {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
+  -ms-grid-row-span: 3;
+  grid-row: 1/4;
   font-family: 'Zen Dots', cursive;
-  margin: 10px;
+  margin: auto;
   font-size: 10px;
+  padding: 10px;
 }
 
 html body #surround1 #stats1 p5 {
@@ -281,24 +266,35 @@ html body #surround1 #stats1 p5 {
 
 html body #surround1 #stats1 h3 {
   -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3/4;
+  -ms-grid-row-span: 3;
+  grid-row: 3/6;
   font-family: 'Zen Dots', cursive;
-  font-size: 5px;
+  font-size: 10px;
+  margin: 0 auto;
+  vertical-align: bottom;
 }
 
 html body #surround1 #stats1 p10 {
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
   grid-row: 4/5;
-  font-size: 5px;
+  font-size: 10px;
+  margin: 0 auto;
+  text-align: justify;
+  vertical-align: middle;
+  line-height: 0.7;
+  word-spacing: -5px;
 }
 
 html body #surround1 #stats1 p12 {
   -ms-grid-row: 5;
   -ms-grid-row-span: 1;
   grid-row: 5/6;
-  font-size: 5px;
+  font-size: 10px;
+  margin: 0 auto;
+  text-align: justify;
+  vertical-align: bottom;
+  word-spacing: -5px;
 }
 
 html body #surround1 .surround:after {
