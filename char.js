@@ -378,7 +378,7 @@ createHeader(charmeleonObj);
 createSection(charmeleonObj);
 createPicture(charmeleonObj);
 
-function createPicture(obj){
+function createPicture(charmeleonObj){
 
     const H1 = document.createElement("h1");
     H1.textContent = `${obj["name"]}`
@@ -389,7 +389,7 @@ function createPicture(obj){
     picture2.appendChild(myImage);
 }
 
-function createHeader(obj){
+function createHeader(charmeleonObj){
     //base 
     const h2 = document.createElement("h2");
     h2.textContent = `Base Experience:`;
@@ -446,7 +446,7 @@ function createHeader(obj){
 
 
 
-function createSection(obj){
+function createSection(charmeleonObj){
     const abilitie = obj["abilities"];
 
     const types = obj["types"];
