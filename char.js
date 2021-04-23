@@ -378,18 +378,18 @@ createHeader(charmeleonObj);
 createSection(charmeleonObj);
 createPicture(charmeleonObj);
 
-function createPicture(obj){
+function createPicture(obj) {
 
     const H1 = document.createElement("h1");
     H1.textContent = `${obj["name"]}`
     picture2.appendChild(H1)
 
     const myImage = document.createElement("img");
-    myImage.src =  'image/charmeleon3.jpg';
+    myImage.src = 'image/charmeleon3.jpg';
     picture2.appendChild(myImage);
 }
 
-function createHeader(obj){
+function createHeader(obj) {
     //base 
     const h2 = document.createElement("h2");
     h2.textContent = `Base Experience:`;
@@ -403,7 +403,7 @@ function createHeader(obj){
     const h3 = document.createElement("h7");
     h3.textContent = `Height:`;
     header2.appendChild(h3)
-    
+
     const p2 = document.createElement("p2");
     p2.textContent = `${obj["height"]}`
     header2.appendChild(p2)
@@ -438,21 +438,21 @@ function createHeader(obj){
     const p4 = document.createElement("p4");
     p4.textContent = `${obj["id"]}`
     header2.appendChild(p4)
-    
-  
-  
-   
-    
-    }
 
 
 
-function createSection(obj){
+
+
+}
+
+
+
+function createSection(obj) {
     const abilitie = obj["abilities"];
 
     const types = obj["types"];
     const status = obj["stats"]
-    for(tys in types){
+    for (tys in types) {
 
         //slot
 
@@ -466,23 +466,23 @@ function createSection(obj){
 
         //Type
         const type = types[tys]["type"]
-        for(ty in type){
+        for (ty in type) {
 
             const h8 = document.createElement("h12")
             h8.textContent = `Type:`
             section2.appendChild(h8)
 
-    
+
             const p8 = document.createElement("p8")
             p8.textContent = `${type["name"]}`
             section2.appendChild(p8)
 
-           
+
 
         }
     }
 
-    for(abil in abilitie){
+    for (abil in abilitie) {
         //Abilities
         const h9 = document.createElement("h13")
         h9.textContent = `Abilities:`
@@ -492,11 +492,11 @@ function createSection(obj){
         p5.textContent = `${abilitie[abil]["name"]}`
         section2.appendChild(p5)
 
-      
+
     }
-    for(stat in status){
+    for (stat in status) {
         const stats = status[stat]["stat"]
-        for(st in stats){
+        for (st in stats) {
             const p11 = document.createElement("h3")
             p11.textContent = `${stats["name"]}`
             section2.appendChild(p11)
@@ -505,17 +505,17 @@ function createSection(obj){
             // const p11 = document.createElement("h3")
             // p11.textContent = `${["name", arr[0]]}`
             // section2.appendChild(p11)
-        
 
-        
 
-        const p10 = document.createElement("p10")
-        p10.textContent = `${status[stat]["base_stat"]}`
-        section2.appendChild(p10)
 
-        const p12 = document.createElement("p12")
-        p12.textContent = `${status[stat]["effort"]}`
-        section2.appendChild(p12)
+
+            const p10 = document.createElement("p10")
+            p10.textContent = `${status[stat]["base_stat"]}`
+            section2.appendChild(p10)
+
+            const p12 = document.createElement("p12")
+            p12.textContent = `${status[stat]["effort"]}`
+            section2.appendChild(p12)
         }
     }
 }
@@ -523,31 +523,31 @@ function createSection(obj){
 //float
 
 !(function ($doc, $win) {
-	var screenWidth = $win.screen.width / 4,
-		screenHeight = $win.screen.height / 4,
-		$elems = $doc.getElementsByClassName("elem"),
-		validPropertyPrefix = '',
-		otherProperty = 'perspective(1000px)',
-		elemStyle = $elems[0].style;
+    var screenWidth = $win.screen.width / 4,
+        screenHeight = $win.screen.height / 4,
+        $elems = $doc.getElementsByClassName("elem"),
+        validPropertyPrefix = '',
+        otherProperty = 'perspective(1000px)',
+        elemStyle = $elems[0].style;
 
-	if(typeof elemStyle.webkitTransform == 'string') {
-		validPropertyPrefix = 'webkitTransform';
-	} else if (typeof elemStyle.MozTransform == 'string') {
-		validPropertyPrefix = 'MozTransform';
-	}
+    if (typeof elemStyle.webkitTransform == 'string') {
+        validPropertyPrefix = 'webkitTransform';
+    } else if (typeof elemStyle.MozTransform == 'string') {
+        validPropertyPrefix = 'MozTransform';
+    }
 
-	$doc.addEventListener('mousemove', function (e) {
-		var centroX = e.clientX - screenWidth,
-			centroY = screenHeight - (e.clientY + 13),
-			degX = centroX * 0.05,
-			degY = centroY * 0.05,
-			$elem
+    $doc.addEventListener('mousemove', function (e) {
+        var centroX = e.clientX - screenWidth,
+            centroY = screenHeight - (e.clientY + 13),
+            degX = centroX * 0.05,
+            degY = centroY * 0.05,
+            $elem
 
-		for (var i = 0; i < $elems.length; i++) {
-   			$elem = $elems[i];
-			$elem.style[validPropertyPrefix] = otherProperty + 'rotateY('+ degX +'deg)  rotateX('+ degY +'deg)';
-		};
-	});
+        for (var i = 0; i < $elems.length; i++) {
+            $elem = $elems[i];
+            $elem.style[validPropertyPrefix] = otherProperty + 'rotateY(' + degX + 'deg)  rotateX(' + degY + 'deg)';
+        };
+    });
 })(document, window);
 
 
