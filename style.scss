@@ -9,6 +9,24 @@ body {
   overflow: hidden;
 }
 
+#landing-container{
+  object-fit: cover;
+}
+
+#a1{
+margin-left: 80px;
+}
+
+
+#a2{
+  margin-left: 80px;
+}
+
+
+#a3{
+  margin-left: 80px;
+}
+
 h1{
   font-family: 'Zen Dots', cursive;
   color: black;
@@ -17,4 +35,135 @@ h1{
 
 .navbar a {
   color: maroon;
+}
+
+#cards{
+  margin-top: 160px;
+  margin-left: 200px;
+  margin-bottom: 50px;
+}
+
+#charHTML {
+  border: 8px orange solid;
+  border-radius: 2%;
+  background-color: black;
+  #charBody {
+      #charmander {
+          background-image: url("card-background.png");
+          background-size: 100%;
+      }
+  }
+}
+
+#homeBod {
+  height: 100vh;
+  width: 100%;
+  background-color: red;
+  a {
+      background-image: url(card.jpg);
+      height: 60vh;
+      width: 20%;
+      margin-top: 10%;
+      margin-left: 9%;
+      background-size: cover;
+  }
+
+  display: inline-flex;
+}
+
+#izardHTML {
+  background-color: black;
+  a {
+      color: black;
+      text-decoration: none;
+      &:hover {
+          color: black;
+          text-decoration: none;
+      }
+  }
+  #body {
+      a {
+          color: black;
+          text-decoration: none;
+          &:hover {
+              color: black;
+              text-decoration: none;
+          }
+      }
+      border: 8px orange solid;
+      border-radius: 2%;
+      margin-left: 23%;
+      height: 100%;
+      width:50%;
+      background-size: cover;
+      background-image: url(background-img.png);
+      #header {
+          display: inline-flex;
+          width: 100%;
+      }
+      #picture {
+          margin-left: 37%;
+          background-image: url(chari.jpg);
+          height: 27.1vh;
+          width: 27.1%;
+          background-size: cover;
+          border: red solid 5px;
+      }
+      #pokiName {
+          margin-left: 31%;
+      }
+      #id {
+          margin-top: 4px;
+      }
+      #health {
+          margin-left: 33.2%;
+      }
+      #stats {
+          #statSec {
+              display: flex;
+              justify-content: center;
+              #move {
+                  padding-right: 10%;
+                  width: 50%;
+              }
+              #weight {
+                  width: 88%;
+                  padding-right: 50%;
+              }
+              #base {
+                  font: bolder;
+                  color: black;
+                  font-size: xx-large;
+              }
+              #effort {
+                  margin-left: 30px;
+                  font: bolder;
+                  color: black;
+                  font-size: xx-large;
+              }
+          }
+      }
+      #typeDiv {
+          display: inline-flex;
+          width: 100%;
+          #fire {
+              background-color: #F08030;
+              font: bolder;
+              color: white;
+              font-size: 47px;
+              text-align: center;
+              width: 50%;
+              height: 60px;
+          }
+          #flying {
+              background-color: #A890F0;
+              font: bolder;
+              color: white;
+              font-size: 47px;
+              text-align: center;
+              width: 50%;
+              height: 60px;
+          }
+      }
+  }
 }
