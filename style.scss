@@ -2,99 +2,22 @@
 
 
 
-html{
-    background: url("https://cdn.statically.io/img/i.pinimg.com/originals/1c/a6/e1/1ca6e1c35e2d884230242cc0326dbf28.jpg") no-repeat center center fixed ; 
+html {
+    background: url("https://cdn.statically.io/img/i.pinimg.com/originals/1c/a6/e1/1ca6e1c35e2d884230242cc0326dbf28.jpg")
+        no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
- 
-   
-      
 
-body{
-    
-    // #surround{
-    //     #header{
-    //         display: inline-flex;
-    //         width: 100%;
-    //     }
-    //     #picture {
-    //         margin-left: 37%;
-    //         //https://www.google.com/imgres?imgurl=http%3A%2F%2Fwww.smashbros.com%2Fimages%2Fog%2Flizardon.jpg&imgrefurl=https%3A%2F%2Fwww.smashbros.com%2Fwiiu-3ds%2Fsp%2Fus%2Fcharacters%2Flizardon.html&tbnid=3dEQfNqCgguUJM&vet=10CHoQMyiYAWoXChMIqOPv0MCL8AIVAAAAAB0AAAAAEAg..i&docid=fnWVSMCQgp6oMM&w=1500&h=1500&itg=1&q=charizard&safe=strict&ved=0CHoQMyiYAWoXChMIqOPv0MCL8AIVAAAAAB0AAAAAEAg
-    //         //image source/credit ^
-    //         background-image: url(chari.jpg);
-    //         height: 27.1vh;
-    //         width: 27.1%;
-    //         background-size: cover;
-    //         border: red solid 5px;
-    //     }
-    //     #pokiName {
-    //         margin-left: 31%;
-    //     }
-    //     #id {
-    //         margin-top: 4px;
-    //     }
-    //     #health {
-    //         margin-left: 33.2%;
-    //     }
-    //     #stats {
-    //         #statSec {
-    //             display: flex;
-    //             justify-content: center;
-    //             #move {
-    //                 padding-right: 10%;
-    //                 width: 50%;
-    //             }
-    //                  #weight {
-    //                 width: 88%;
-    //                 padding-right: 50%;
-    //             }
-    //             #base {
-    //                 font: bolder;
-    //                 color: black;
-    //                 font-size: xx-large;
-    //             }
-    //             #effort {
-    //                 margin-left: 30px;
-    //                 font: bolder;
-    //                 color: black;
-    //                 font-size: xx-large;
-    //             }
-    //         }
-    //     }
-    //     #typeDiv {
-    //         display: inline-flex;
-    //         width: 100%;
-    //         #fire {
-    //             background-color: #F08030;
-    //             font: bolder;
-    //             color: white;
-    //             font-size: 47px;
-    //             text-align: center;
-    //             width: 50%;
-    //             height: 60px;
-    //         }
-    //         #flying {
-    //             background-color: #A890F0;
-    //             font: bolder;
-    //             color: white;
-    //             font-size: 47px;
-    //             text-align: center;
-    //             width: 50%;
-    //             height: 60px;
-    //         }
-    //     }
-    // }
-   
+    //Abdi
 
-    $color1: #F24C3D;
-    $color2: #F27C38;
-    $color3: #F2CD5C;
-   
-    #surround1{
-        
-        background: linear-gradient($color1, $color2,$color3);
+    $color1: #f24c3d;
+    $color2: #f27c38;
+    $color3: #f2cd5c;
+
+    #surround1 {
+        background: linear-gradient($color1, $color2, $color3);
         width: 320px;
         height: 489px;
         background-size: unset;
@@ -102,9 +25,9 @@ body{
         background-position: center;
         border-radius: 15px;
         border: solid 5px yellow;
-        box-shadow: -3px -3px 3px 0 rgba(#F2D852, 0.3), 3px 3px 3px 0 rgba($color1, 0.3), 0 0 6px 2px rgba(#ffe759, 0.3),
-         0 35px 25px -15px rgba(0, 0, 0, 0.3);
-       position: fixed;
+        box-shadow: -3px -3px 3px 0 rgba(#f2d852, 0.3), 3px 3px 3px 0 rgba($color1, 0.3), 0 0 6px 2px rgba(#ffe759, 0.3),
+            0 35px 25px -15px rgba(0, 0, 0, 0.3);
+        position: fixed;
         top: 20%;
         left: 30%;
         transform: translate(-50%, -50%);
@@ -114,306 +37,257 @@ body{
         margin: 20px 10px;
         animation: holoCard 15s ease infinite;
 
-
-          
-        
-
-        #picture1{
-                
-            h1{
+        #picture {
+            h1 {
                 text-align: center;
                 font-size: 30px;
-                font-family: 'Zen Dots', cursive;
+                font-family: "Zen Dots", cursive;
             }
-            img{
+            img {
                 border: 2px solid red;
-                box-shadow: -3px -3px 3px 0 rgba(black, 0.3), 3px 3px 3px 0 rgba($color1, 0.3), 0 0 6px 2px rgba(#ffe759, 0.3),
-                 0 35px 25px -15px rgba(0, 0, 0, 0.3);
+                box-shadow: -3px -3px 3px 0 rgba(black, 0.3), 3px 3px 3px 0 rgba($color1, 0.3),
+                    0 0 6px 2px rgba(#ffe759, 0.3), 0 35px 25px -15px rgba(0, 0, 0, 0.3);
                 position: relative;
                 width: 250px;
                 height: 150px;
                 left: 10%;
                 top: 10%;
-               
             }
-           
         }
-        #header1{
+        #header {
             display: grid;
-            grid-template: 50px / auto auto auto auto auto ;
-           margin: 2px;
-           padding: 2px;
-            
-          width: 340px;
+            grid-template: 50px / auto auto auto auto auto;
+            margin: 2px;
+            padding: 2px;
 
-           h2{
-               font-family: 'Zen Dots', cursive;
-               grid-row: 1/2;
-               font-size: 10px;
-               padding: 11px;
-               
-           }
-            p1{
-                
-                grid-column: 1/2;
-               grid-row: 2/3;
-                font-size: 10px;
-                font-family: 'Zen Dots', cursive;
-                border-bottom: solid 2px black;
-               border-radius: 10px;
-               padding-bottom: 5px;
-               text-align: center;
-               color: red;
-               
-              
-            }   
-            h7{
+            width: 340px;
+
+            h2 {
+                font-family: "Zen Dots", cursive;
                 grid-row: 1/2;
-                font-family: 'Zen Dots', cursive;
+                font-size: 10px;
+                padding: 11px;
+            }
+            p1 {
+                grid-column: 1/2;
+                grid-row: 2/3;
+                font-size: 10px;
+                font-family: "Zen Dots", cursive;
+                border-bottom: solid 2px black;
+                border-radius: 10px;
+                padding-bottom: 5px;
+                text-align: center;
+                color: red;
+            }
+            h7 {
+                grid-row: 1/2;
+                font-family: "Zen Dots", cursive;
                 margin: 10px;
                 font-size: 10px;
-                
             }
-            p2{
+            p2 {
                 grid-column: 2/3;
                 grid-row: 2/3;
                 font-size: 10px;
-                font-family: 'Zen Dots', cursive;
+                font-family: "Zen Dots", cursive;
                 border-bottom: solid 2px black;
-               border-radius: 10px;
-               padding-bottom: 5px;
-               text-align: center;
-               color: red;
+                border-radius: 10px;
+                padding-bottom: 5px;
+                text-align: center;
+                color: red;
             }
 
-            h8{
+            h8 {
                 grid-row: 1/2;
-                font-family: 'Zen Dots', cursive;
+                font-family: "Zen Dots", cursive;
                 margin: 10px;
                 font-size: 10px;
             }
-            p6{
+            p6 {
                 grid-column: 3/4;
                 grid-row: 2/3;
                 font-size: 10px;
-                font-family: 'Zen Dots', cursive;
+                font-family: "Zen Dots", cursive;
                 border-bottom: solid 2px black;
-               border-radius: 10px;
-               padding-bottom: 5px;
-               text-align: center;
-               color: red;
+                border-radius: 10px;
+                padding-bottom: 5px;
+                text-align: center;
+                color: red;
             }
-            h9{
+            h9 {
                 grid-row: 3/4;
-                font-family: 'Zen Dots', cursive;
+                font-family: "Zen Dots", cursive;
                 margin: 10px;
                 font-size: 10px;
             }
-            p3{
+            p3 {
                 grid-column: 1/2;
                 grid-row: 4/5;
                 font-size: 10px;
-                font-family: 'Zen Dots', cursive;
+                font-family: "Zen Dots", cursive;
                 border-bottom: solid 2px black;
-               border-radius: 10px;
-               padding-bottom: 5px;
-               text-align: center;
-               color: #F56C01;
+                border-radius: 10px;
+                padding-bottom: 5px;
+                text-align: center;
+                color: #f56c01;
             }
-            h10{
+            h10 {
                 grid-row: 3/4;
-                font-family: 'Zen Dots', cursive;
+                font-family: "Zen Dots", cursive;
                 margin: 10px;
                 font-size: 10px;
             }
-            p4{
+            p4 {
                 grid-column: 2/3;
                 grid-row: 4/5;
                 font-size: 10px;
-                font-family: 'Zen Dots', cursive;
+                font-family: "Zen Dots", cursive;
                 border-bottom: solid 2px black;
-               border-radius: 10px;
-               padding-bottom: 5px;
-               text-align: center;
-               color: #F56C01;
+                border-radius: 10px;
+                padding-bottom: 5px;
+                text-align: center;
+                color: #f56c01;
             }
-            h11{
+            h11 {
                 grid-row: 3/4;
-                font-family: 'Zen Dots', cursive;
+                font-family: "Zen Dots", cursive;
                 margin: 10px;
                 font-size: 10px;
             }
-            p7{
-                    grid-column: 3/4;
-                    grid-row: 4/5;
-                    font-size: 10px;
-                    font-family: 'Zen Dots', cursive;
-                    border-bottom: solid 2px black;
-                   border-radius: 10px;
-                   padding-bottom: 5px;
-                   text-align: center;
-                   color: #F56C01;
+            p7 {
+                grid-column: 3/4;
+                grid-row: 4/5;
+                font-size: 10px;
+                font-family: "Zen Dots", cursive;
+                border-bottom: solid 2px black;
+                border-radius: 10px;
+                padding-bottom: 5px;
+                text-align: center;
+                color: #f56c01;
             }
-           
         }
-        
-           
-                
-            
 
-            #stats1{
-                display: grid;
-                grid-template: 50px / auto auto auto auto auto auto ;
-               margin: 2px;
-               padding: 2px;
-               width: 340px;
-                h12{
-                 grid-row: 1/2;
-                font-family: 'Zen Dots', cursive;
+        #stats {
+            display: grid;
+            grid-template: 50px / auto auto auto auto auto auto;
+            margin: 2px;
+            padding: 2px;
+            width: 340px;
+            h12 {
+                grid-row: 1/2;
+                font-family: "Zen Dots", cursive;
                 font-size: 10px;
                 margin: auto;
                 padding: 10px;
-               
-                }
-                p8{
-                 
-                    grid-column: 1/2;
-                    grid-row: 2/3;
-                   
-                    font-size: 10px;
-                    font-family: 'Zen Dots', cursive;
-                    border-bottom: solid 2px black;
-                   border-radius: 10px;
-                   text-align: center;
-                   color: red;
-                 
-                  
-                }
-                
-
-              //Abilities
-
-                h13{
-                    
-                    grid-row: 1/4;
-                    font-family: 'Zen Dots', cursive;
-                  margin: auto;
-                    font-size: 10px;
-                    padding: 10px;
-                   
-                   }
-                   p5{
-                    
-                  
-                  
-                    grid-row: 2/3;
-                   
-                    font-size: 10px;
-                    text-align: center;
-                    font-family: 'Zen Dots', cursive;
-                    color: red;
-                    border-radius: 10px;
-                    border-bottom: solid 2px black;
-                   }
-            
-
-
-                 //stats
-                   h3{
-                   
-                    grid-row: 3/6;
-                    font-family: 'Zen Dots', cursive;
-                    font-size: 10px;
-                  //  text-align: center;
-                  // margin: 0 5px;
-                  // padding: 0 10px;
-                  margin: 0 auto;
-                  vertical-align: bottom;
-                
-                   }
-
-                   p10{
-                    grid-row: 4/5;
-                    font-size: 10px;
-                    margin: 0 auto;
-                    text-align: justify;
-                    vertical-align: middle;
-                     line-height: 0.7;
-                     word-spacing: -5px;
-                   }
-                   p12{
-                    grid-row: 5/6;
-                    font-size: 10px;
-                    margin: 0 auto;
-                    text-align: justify;
-                    vertical-align: bottom;
-                    word-spacing: -5px;
-                   }
             }
-        
-    
-        
+            p8 {
+                grid-column: 1/2;
+                grid-row: 2/3;
 
-        //shiney 
+                font-size: 10px;
+                font-family: "Zen Dots", cursive;
+                border-bottom: solid 2px black;
+                border-radius: 10px;
+                text-align: center;
+                color: red;
+            }
 
-  
-  .surround:after {
-    
-    animation: shine 5s ease-in-out  infinite;
-    animation-fill-mode: forwards;  
-    content: "";
-    position: fixed;
-    top: -110%;
-    left: -210%;
-    width: 200%;
-    height: 200%;
-    opacity: 0;
-    transform: rotate(30deg);
-    
-    background: rgba(255, 255, 255, 0.13);
-    background: linear-gradient(
-      to right, 
-      rgba(255, 255, 255, 0.13) 0%,
-      rgba(255, 255, 255, 0.13) 77%,
-      rgba(255, 255, 255, 0.5) 92%,
-      rgba(255, 255, 255, 0.0) 100%
-    );
-  }
-  
+            //Abilities
 
-  
-  .surround:active:after {
-    opacity: 0;
-  }
-  
-  @keyframes shine{
-    10% {
-      opacity: 1;
-      top: -30%;
-      left: -30%;
-      transition-property: left, top, opacity;
-      transition-duration: 0.10s, 0.10s, 0.15s;
-      transition-timing-function: ease;
-    }
-    100% {
-      opacity: 0;
-      top: -30%;
-      left: -30%;
-      transition-property: left, top, opacity;
-    }
-  }
-        
-            
-          
-//float
-        
+            h13 {
+                grid-row: 1/4;
+                font-family: "Zen Dots", cursive;
+                margin: auto;
+                font-size: 10px;
+                padding: 10px;
+            }
+            p5 {
+                grid-row: 2/3;
 
+                font-size: 10px;
+                text-align: center;
+                font-family: "Zen Dots", cursive;
+                color: red;
+                border-radius: 10px;
+                border-bottom: solid 2px black;
+            }
 
-  
-    
+            //stats
+            h3 {
+                grid-row: 3/6;
+                font-family: "Zen Dots", cursive;
+                font-size: 10px;
+                //  text-align: center;
+                // margin: 0 5px;
+                // padding: 0 10px;
+                margin: 0 auto;
+                vertical-align: bottom;
+            }
+
+            p10 {
+                grid-row: 4/5;
+                font-size: 10px;
+                margin: 0 auto;
+                text-align: justify;
+                vertical-align: middle;
+                line-height: 0.7;
+                word-spacing: -5px;
+            }
+            p12 {
+                grid-row: 5/6;
+                font-size: 10px;
+                margin: 0 auto;
+                text-align: justify;
+                vertical-align: bottom;
+                word-spacing: -5px;
+            }
+        }
+
+        //shiney
+
+        .surround:after {
+            animation: shine 5s ease-in-out infinite;
+            animation-fill-mode: forwards;
+            content: "";
+            position: fixed;
+            top: -110%;
+            left: -210%;
+            width: 200%;
+            height: 200%;
+            opacity: 0;
+            transform: rotate(30deg);
+
+            background: rgba(255, 255, 255, 0.13);
+            background: linear-gradient(
+                to right,
+                rgba(255, 255, 255, 0.13) 0%,
+                rgba(255, 255, 255, 0.13) 77%,
+                rgba(255, 255, 255, 0.5) 92%,
+                rgba(255, 255, 255, 0) 100%
+            );
+        }
+
+        .surround:active:after {
+            opacity: 0;
+        }
+
+        @keyframes shine {
+            10% {
+                opacity: 1;
+                top: -30%;
+                left: -30%;
+                transition-property: left, top, opacity;
+                transition-duration: 0.1s, 0.1s, 0.15s;
+                transition-timing-function: ease;
+            }
+            100% {
+                opacity: 0;
+                top: -30%;
+                left: -30%;
+                transition-property: left, top, opacity;
+            }
+        }
+
+        //float
     }
 }
-}
-
-
-

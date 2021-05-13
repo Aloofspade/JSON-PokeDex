@@ -1,11 +1,12 @@
 html {
-  background: url("https://cdn.statically.io/img/i.pinimg.com/originals/1c/a6/e1/1ca6e1c35e2d884230242cc0326dbf28.jpg") no-repeat center center fixed;
+  background: url("https://cdn.statically.io/img/i.pinimg.com/originals/1c/a6/e1/1ca6e1c35e2d884230242cc0326dbf28.jpg")
+    no-repeat center center fixed;
   background-size: cover;
 }
 
-html body #surround1 {
-  background: -webkit-gradient(linear, left top, left bottom, from(#F24C3D), color-stop(#F27C38), to(#F2CD5C));
-  background: linear-gradient(#F24C3D, #F27C38, #F2CD5C);
+html #surround1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f24c3d), color-stop(#f27c38), to(#f2cd5c));
+  background: linear-gradient(#f24c3d, #f27c38, #f2cd5c);
   width: 320px;
   height: 489px;
   background-size: unset;
@@ -13,31 +14,35 @@ html body #surround1 {
   background-position: center;
   border-radius: 15px;
   border: solid 5px yellow;
-  -webkit-box-shadow: -3px -3px 3px 0 rgba(242, 216, 82, 0.3), 3px 3px 3px 0 rgba(242, 76, 61, 0.3), 0 0 6px 2px rgba(255, 231, 89, 0.3), 0 35px 25px -15px rgba(0, 0, 0, 0.3);
-          box-shadow: -3px -3px 3px 0 rgba(242, 216, 82, 0.3), 3px 3px 3px 0 rgba(242, 76, 61, 0.3), 0 0 6px 2px rgba(255, 231, 89, 0.3), 0 35px 25px -15px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: -3px -3px 3px 0 rgba(242, 216, 82, 0.3), 3px 3px 3px 0 rgba(242, 76, 61, 0.3),
+    0 0 6px 2px rgba(255, 231, 89, 0.3), 0 35px 25px -15px rgba(0, 0, 0, 0.3);
+  box-shadow: -3px -3px 3px 0 rgba(242, 216, 82, 0.3), 3px 3px 3px 0 rgba(242, 76, 61, 0.3),
+    0 0 6px 2px rgba(255, 231, 89, 0.3), 0 35px 25px -15px rgba(0, 0, 0, 0.3);
   position: fixed;
   top: 20%;
   left: 30%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   overflow: hidden;
   display: inline-block;
   vertical-align: middle;
   margin: 20px 10px;
   -webkit-animation: holoCard 15s ease infinite;
-          animation: holoCard 15s ease infinite;
+  animation: holoCard 15s ease infinite;
 }
 
-html body #surround1 #picture1 h1 {
+html #surround1 #picture h1 {
   text-align: center;
   font-size: 30px;
-  font-family: 'Zen Dots', cursive;
+  font-family: "Zen Dots", cursive;
 }
 
-html body #surround1 #picture1 img {
+html #surround1 #picture img {
   border: 2px solid red;
-  -webkit-box-shadow: -3px -3px 3px 0 rgba(0, 0, 0, 0.3), 3px 3px 3px 0 rgba(242, 76, 61, 0.3), 0 0 6px 2px rgba(255, 231, 89, 0.3), 0 35px 25px -15px rgba(0, 0, 0, 0.3);
-          box-shadow: -3px -3px 3px 0 rgba(0, 0, 0, 0.3), 3px 3px 3px 0 rgba(242, 76, 61, 0.3), 0 0 6px 2px rgba(255, 231, 89, 0.3), 0 35px 25px -15px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: -3px -3px 3px 0 rgba(0, 0, 0, 0.3), 3px 3px 3px 0 rgba(242, 76, 61, 0.3),
+    0 0 6px 2px rgba(255, 231, 89, 0.3), 0 35px 25px -15px rgba(0, 0, 0, 0.3);
+  box-shadow: -3px -3px 3px 0 rgba(0, 0, 0, 0.3), 3px 3px 3px 0 rgba(242, 76, 61, 0.3),
+    0 0 6px 2px rgba(255, 231, 89, 0.3), 0 35px 25px -15px rgba(0, 0, 0, 0.3);
   position: relative;
   width: 250px;
   height: 150px;
@@ -45,19 +50,19 @@ html body #surround1 #picture1 img {
   top: 10%;
 }
 
-html body #surround1 #header1 {
+html #surround1 #header {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 50px;
   -ms-grid-columns: auto auto auto auto auto;
-      grid-template: 50px / auto auto auto auto auto;
+  grid-template: 50px / auto auto auto auto auto;
   margin: 2px;
   padding: 2px;
   width: 340px;
 }
 
-html body #surround1 #header1 h2 {
-  font-family: 'Zen Dots', cursive;
+html #surround1 #header h2 {
+  font-family: "Zen Dots", cursive;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
@@ -65,7 +70,7 @@ html body #surround1 #header1 h2 {
   padding: 11px;
 }
 
-html body #surround1 #header1 p1 {
+html #surround1 #header p1 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
@@ -73,7 +78,7 @@ html body #surround1 #header1 p1 {
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   font-size: 10px;
-  font-family: 'Zen Dots', cursive;
+  font-family: "Zen Dots", cursive;
   border-bottom: solid 2px black;
   border-radius: 10px;
   padding-bottom: 5px;
@@ -81,16 +86,16 @@ html body #surround1 #header1 p1 {
   color: red;
 }
 
-html body #surround1 #header1 h7 {
+html #surround1 #header h7 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  font-family: 'Zen Dots', cursive;
+  font-family: "Zen Dots", cursive;
   margin: 10px;
   font-size: 10px;
 }
 
-html body #surround1 #header1 p2 {
+html #surround1 #header p2 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -98,7 +103,7 @@ html body #surround1 #header1 p2 {
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   font-size: 10px;
-  font-family: 'Zen Dots', cursive;
+  font-family: "Zen Dots", cursive;
   border-bottom: solid 2px black;
   border-radius: 10px;
   padding-bottom: 5px;
@@ -106,16 +111,16 @@ html body #surround1 #header1 p2 {
   color: red;
 }
 
-html body #surround1 #header1 h8 {
+html #surround1 #header h8 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  font-family: 'Zen Dots', cursive;
+  font-family: "Zen Dots", cursive;
   margin: 10px;
   font-size: 10px;
 }
 
-html body #surround1 #header1 p6 {
+html #surround1 #header p6 {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3/4;
@@ -123,7 +128,7 @@ html body #surround1 #header1 p6 {
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   font-size: 10px;
-  font-family: 'Zen Dots', cursive;
+  font-family: "Zen Dots", cursive;
   border-bottom: solid 2px black;
   border-radius: 10px;
   padding-bottom: 5px;
@@ -131,16 +136,16 @@ html body #surround1 #header1 p6 {
   color: red;
 }
 
-html body #surround1 #header1 h9 {
+html #surround1 #header h9 {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
-  font-family: 'Zen Dots', cursive;
+  font-family: "Zen Dots", cursive;
   margin: 10px;
   font-size: 10px;
 }
 
-html body #surround1 #header1 p3 {
+html #surround1 #header p3 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
@@ -148,24 +153,24 @@ html body #surround1 #header1 p3 {
   -ms-grid-row-span: 1;
   grid-row: 4/5;
   font-size: 10px;
-  font-family: 'Zen Dots', cursive;
+  font-family: "Zen Dots", cursive;
   border-bottom: solid 2px black;
   border-radius: 10px;
   padding-bottom: 5px;
   text-align: center;
-  color: #F56C01;
+  color: #f56c01;
 }
 
-html body #surround1 #header1 h10 {
+html #surround1 #header h10 {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
-  font-family: 'Zen Dots', cursive;
+  font-family: "Zen Dots", cursive;
   margin: 10px;
   font-size: 10px;
 }
 
-html body #surround1 #header1 p4 {
+html #surround1 #header p4 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -173,24 +178,24 @@ html body #surround1 #header1 p4 {
   -ms-grid-row-span: 1;
   grid-row: 4/5;
   font-size: 10px;
-  font-family: 'Zen Dots', cursive;
+  font-family: "Zen Dots", cursive;
   border-bottom: solid 2px black;
   border-radius: 10px;
   padding-bottom: 5px;
   text-align: center;
-  color: #F56C01;
+  color: #f56c01;
 }
 
-html body #surround1 #header1 h11 {
+html #surround1 #header h11 {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
-  font-family: 'Zen Dots', cursive;
+  font-family: "Zen Dots", cursive;
   margin: 10px;
   font-size: 10px;
 }
 
-html body #surround1 #header1 p7 {
+html #surround1 #header p7 {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3/4;
@@ -198,36 +203,36 @@ html body #surround1 #header1 p7 {
   -ms-grid-row-span: 1;
   grid-row: 4/5;
   font-size: 10px;
-  font-family: 'Zen Dots', cursive;
+  font-family: "Zen Dots", cursive;
   border-bottom: solid 2px black;
   border-radius: 10px;
   padding-bottom: 5px;
   text-align: center;
-  color: #F56C01;
+  color: #f56c01;
 }
 
-html body #surround1 #stats1 {
+html #surround1 #stats {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 50px;
   -ms-grid-columns: auto auto auto auto auto auto;
-      grid-template: 50px / auto auto auto auto auto auto;
+  grid-template: 50px / auto auto auto auto auto auto;
   margin: 2px;
   padding: 2px;
   width: 340px;
 }
 
-html body #surround1 #stats1 h12 {
+html #surround1 #stats h12 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  font-family: 'Zen Dots', cursive;
+  font-family: "Zen Dots", cursive;
   font-size: 10px;
   margin: auto;
   padding: 10px;
 }
 
-html body #surround1 #stats1 p8 {
+html #surround1 #stats p8 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
@@ -235,46 +240,46 @@ html body #surround1 #stats1 p8 {
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   font-size: 10px;
-  font-family: 'Zen Dots', cursive;
+  font-family: "Zen Dots", cursive;
   border-bottom: solid 2px black;
   border-radius: 10px;
   text-align: center;
   color: red;
 }
 
-html body #surround1 #stats1 h13 {
+html #surround1 #stats h13 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   grid-row: 1/4;
-  font-family: 'Zen Dots', cursive;
+  font-family: "Zen Dots", cursive;
   margin: auto;
   font-size: 10px;
   padding: 10px;
 }
 
-html body #surround1 #stats1 p5 {
+html #surround1 #stats p5 {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   font-size: 10px;
   text-align: center;
-  font-family: 'Zen Dots', cursive;
+  font-family: "Zen Dots", cursive;
   color: red;
   border-radius: 10px;
   border-bottom: solid 2px black;
 }
 
-html body #surround1 #stats1 h3 {
+html #surround1 #stats h3 {
   -ms-grid-row: 3;
   -ms-grid-row-span: 3;
   grid-row: 3/6;
-  font-family: 'Zen Dots', cursive;
+  font-family: "Zen Dots", cursive;
   font-size: 10px;
   margin: 0 auto;
   vertical-align: bottom;
 }
 
-html body #surround1 #stats1 p10 {
+html #surround1 #stats p10 {
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
   grid-row: 4/5;
@@ -286,7 +291,7 @@ html body #surround1 #stats1 p10 {
   word-spacing: -5px;
 }
 
-html body #surround1 #stats1 p12 {
+html #surround1 #stats p12 {
   -ms-grid-row: 5;
   -ms-grid-row-span: 1;
   grid-row: 5/6;
@@ -297,11 +302,11 @@ html body #surround1 #stats1 p12 {
   word-spacing: -5px;
 }
 
-html body #surround1 .surround:after {
-  -webkit-animation: shine 5s ease-in-out  infinite;
-          animation: shine 5s ease-in-out  infinite;
+html #surround1 .surround:after {
+  -webkit-animation: shine 5s ease-in-out infinite;
+  animation: shine 5s ease-in-out infinite;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   content: "";
   position: fixed;
   top: -110%;
@@ -310,13 +315,27 @@ html body #surround1 .surround:after {
   height: 200%;
   opacity: 0;
   -webkit-transform: rotate(30deg);
-          transform: rotate(30deg);
+  transform: rotate(30deg);
   background: rgba(255, 255, 255, 0.13);
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.13)), color-stop(77%, rgba(255, 255, 255, 0.13)), color-stop(92%, rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(255, 255, 255, 0.13)),
+    color-stop(77%, rgba(255, 255, 255, 0.13)),
+    color-stop(92%, rgba(255, 255, 255, 0.5)),
+    to(rgba(255, 255, 255, 0))
+  );
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
-html body #surround1 .surround:active:after {
+html #surround1 .surround:active:after {
   opacity: 0;
 }
 
@@ -327,10 +346,10 @@ html body #surround1 .surround:active:after {
     left: -30%;
     -webkit-transition-property: left, top, opacity;
     transition-property: left, top, opacity;
-    -webkit-transition-duration: 0.10s, 0.10s, 0.15s;
-            transition-duration: 0.10s, 0.10s, 0.15s;
+    -webkit-transition-duration: 0.1s, 0.1s, 0.15s;
+    transition-duration: 0.1s, 0.1s, 0.15s;
     -webkit-transition-timing-function: ease;
-            transition-timing-function: ease;
+    transition-timing-function: ease;
   }
   100% {
     opacity: 0;
@@ -348,10 +367,10 @@ html body #surround1 .surround:active:after {
     left: -30%;
     -webkit-transition-property: left, top, opacity;
     transition-property: left, top, opacity;
-    -webkit-transition-duration: 0.10s, 0.10s, 0.15s;
-            transition-duration: 0.10s, 0.10s, 0.15s;
+    -webkit-transition-duration: 0.1s, 0.1s, 0.15s;
+    transition-duration: 0.1s, 0.1s, 0.15s;
     -webkit-transition-timing-function: ease;
-            transition-timing-function: ease;
+    transition-timing-function: ease;
   }
   100% {
     opacity: 0;
