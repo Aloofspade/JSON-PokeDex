@@ -278,19 +278,6 @@ let charmeleon = `{
         "type": {
             "name": "fire"
         }
-<<<<<<< HEAD
-    ],
-    "weight": 905
-}
-const{abilities,types, weight} = charmander
-console.log(abilities)
-console.log(types)
-console.log(weight)
-
-const{types, ...theRest} = charmander
-console.log(types)
-console.log(theRest)
-=======
     }],
     "weight": 190
 }`;
@@ -370,7 +357,6 @@ console.log(theRest)
 
 
 
-
 // function createSection(charmeleonObj) {
 //     const abilitie = obj["abilities"];
 //     const types = obj["types"];
@@ -421,19 +407,7 @@ console.log(theRest)
 //             section2.appendChild(p12)
 //         }
 //     }
-// // }
-
-//             const p12 = document.createElement("p12")
-//             p12.textContent = `${status[stat]["effort"]}`
-//             section2.appendChild(p12)
-//         }
-//     }
 // }
-
-// charmandersPowers(charmObj);
-// charmandersHeader(charmObj);
-// charmandersTypes(charmObj);
-
 
 // // float
 
@@ -728,6 +702,4 @@ function start() {
 
 }
 
-
 start(charizard, charmander, charmeleon);
-
